@@ -13,5 +13,12 @@
     "redux": "^4.0.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "postinstall": "webpack"
   }
 }
