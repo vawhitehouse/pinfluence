@@ -1,5 +1,4 @@
 class Api::UsersController < ApplicationController
-:new, :create, :show, :index
 
   def new
   end
