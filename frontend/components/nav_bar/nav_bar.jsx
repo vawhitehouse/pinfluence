@@ -10,14 +10,14 @@ export default ({ currentUser, logout }) => {
   ) 
   : (
       <div>
-        <button><Link to="/signup">Sign up</Link></button>
-        <button><Link to="/login">Log in</Link></button>
+        {/* <button><Link to="/signup">Sign up</Link></button>
+        <button><Link to="/login">Log in</Link></button> */}
       </div>
     );
 
   return (
     <header>
-      <h4>Logo goes here</h4>
+      <img src="assets/pinfluence-logo-purple.png" height="35px" width="35px" alt="Pinfluence Logo"/>
       <div>
         {display}
       </div>

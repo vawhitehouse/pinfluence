@@ -34,18 +34,25 @@ class Login extends React.Component {
       <div>
         <button><Link to='/signup'>Sign up</Link></button>
 
-        {this.renderErrors()}
+        <div className="">
+          <img src="assets/pinfluence-logo-purple.png" height="45px" width="45px" alt="Pinfluence Logo" />
 
-        <form onSubmit={this.handleSubmit}>
-          <br />
-          <input type="username" placeholder="Username" onChange={this.update('username')} />
-          <br />
-          <input type="password" placeholder="Password" onChange={this.update('password')} />
-          <br />
-          <input type="submit" value="Continue" />
-          <br />
-          <p><Link to='/signup'>Not on Pinterest yet? Sign up</Link></p>
-        </form>
+          <h3>Welcome to Pinterest</h3>
+
+          {this.renderErrors()}
+
+          <form onSubmit={this.handleSubmit}>
+            <br />
+            <input type="username" placeholder="Username" onChange={this.update('username')} />
+            <br />
+            <input type="password" placeholder="Password" onChange={this.update('password')} />
+            <br />
+            <input type="submit" value="Log in" />
+            <br />
+            <p><Link to='/signup'>Not on Pinterest yet? Sign up</Link></p>
+          </form>
+
+        </div>
 
       </div>
     )
