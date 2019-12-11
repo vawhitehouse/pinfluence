@@ -4,7 +4,7 @@ import Signup from './signup'
 
 const mapStateToProps = ({ errors }) => ({
   user: { email: '', age: '', password: '' },
-  errors: errors.session
+  errors: Object.values(errors.session)
 })
 
 const mapDispatchToProps = dispatch => ({
