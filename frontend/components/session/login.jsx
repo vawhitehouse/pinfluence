@@ -7,11 +7,17 @@ class Login extends React.Component {
     this.state = this.props.user;
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
     this.props.login(this.state);
+  }
+
+  demoLogin(e) {
+    e.preventDefault();
+    this.props.login({ email: 'demoUser@demo.com', password: 'password' })
   }
 
   update(field) {
@@ -47,6 +53,8 @@ class Login extends React.Component {
               <input className="session-form-input" type="email" placeholder="Email" onChange={this.update('email')} />
               <input className="session-form-input" type="password" placeholder="Password" onChange={this.update('password')} />
               <input className="session-form-submit" type="submit" value="Log in" />
+              
+              <button onClick={this.demoLogin} className="demo-login-button">Demo Log in</button>
 
               <p>By continuing, you agree to Pinfluence's <a>Terms of Service</a>, <a>Privacy Policy</a></p>
 

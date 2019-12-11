@@ -24,6 +24,10 @@ body {
   cursor: pointer;
 }
 
+.session-top-button:hover {
+  background-color: #e2e2e2;
+}
+
 .session-top-button a {
   text-decoration: none;
   color: #333333;
@@ -99,7 +103,7 @@ body {
   align-items: center;
 }
 
-.session-form-submit {
+.session-form-submit, .demo-login-button {
   height: 36px;
   border: 0px;
   width: 100%;
@@ -111,6 +115,14 @@ body {
   margin: 10px 0px;
   cursor: pointer;
   width: 268px;
+}
+
+.session-form-submit:hover, .demo-login-button:hover {
+  background-color: #8003c4;
+}
+
+.demo-login-button {
+  margin: 0px 0px 10px 0px;
 }
 
 .footer-links {
