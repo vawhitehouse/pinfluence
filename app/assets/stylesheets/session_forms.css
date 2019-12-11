@@ -5,19 +5,21 @@ body {
 .session-container {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 16px 0px;
 }
 
 .session-top-button {
+  position: fixed;
   display: block;
+  width: 130px;
   font-weight: 700;
   letter-spacing: -0.4px;
   min-height: 40px;
   border-radius: 8px;
   background-color: #efefef;
-  
   border: 0px;
   padding: 10px 14px;
-  font-size: 100%;
+  font-size: 16px;
   margin: 30px 20px;
   cursor: pointer;
 }
@@ -28,8 +30,9 @@ body {
 }
 
 .session-box-container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -38,7 +41,7 @@ body {
   background-color: white;
   border-radius: 8px;
   padding: 20px 60px;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .session-box h3 {
@@ -46,6 +49,21 @@ body {
   color: rgb(51, 51, 51);
   letter-spacing: -1.2px;
   margin-bottom: 10px;
+}
+
+.session-box h5 {
+  color: rgb(51, 51, 51);
+  margin: 15px 0px 26px 0px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.session-box p {
+  font-size: 11px;
+  color: rgb(170, 170, 170);
+  width: 250px;
+  line-height: 1.4;
+  margin: 0px 9px;
 }
 
 .session-box p a {
@@ -61,14 +79,11 @@ body {
   border-bottom: 0.5px solid rgb(138, 138, 138) ;
 }
 
-.session-box p {
-  color: rgb(51, 51, 51);
-  margin: 15px 0px 30px 0px;
-}
-
 .session-form {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .session-form-input {
@@ -78,6 +93,9 @@ body {
   padding: 8px 14px;
   letter-spacing: -0.4px;
   margin: 4px 0px;
+  width: 240px;
+  display: flex;
+  align-items: center;
 }
 
 .session-form-submit {
@@ -91,4 +109,24 @@ body {
   background-color: #9100df;
   margin: 10px 0px;
   cursor: pointer;
+  width: 268px;
+}
+
+.footer-links {
+  position: fixed;
+  bottom: 0;
+  padding: 16px 0px;
+}
+
+.footer-links a {
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 4px 7px;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid rgb(222, 222, 222);
+  margin: 10px auto;
+  width: 110px;
 }

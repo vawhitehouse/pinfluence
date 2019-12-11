@@ -41,7 +41,7 @@ class Signup extends React.Component {
             {/* <img src="assets/pinfluence-logo-purple.png" height="45px" width="45px" alt="Pinfluence Logo" /> */}
 
             <h3>Welcome to Pinfluence</h3>
-            <p>Find new ideas to try</p>
+            <h5>Find new ideas to try</h5>
             {this.renderErrors()}
 
             <form onSubmit={this.handleSubmit} className="session-form">
@@ -49,11 +49,29 @@ class Signup extends React.Component {
               <input className="session-form-input" type="password" placeholder="Enter password" onChange={this.update('password')}/>
               <input className="session-form-input" type="text" placeholder="Age" onChange={this.update('age')}/>
               <input className="session-form-submit" type="submit" value="Continue" />
+
+              <p>By continuing, you agree to Pinfluence's <a>Terms of Service</a>, <a>Privacy Policy</a></p>
+              
+              <div className="horizontal-line"></div>
               <p><Link to='/login'>Already a member? Log in</Link></p>
             </form>
 
           </div>
+          <div className="footer-links">
+            <a>About Pinfluence</a>
+            <a>Blog</a>
+            <a>Businesses</a>
+            <a>Terms of Service</a>
+            <a>Privacy Policy</a>
+            <a>Help</a>
+            <a>iPhone App</a>
+            <a>Android App</a>
+            <a>Users</a>
+            <a>Collections</a>
+            <a>Topics</a>
+          </div>
         </div>
+
       </div>
     )
   }
