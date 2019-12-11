@@ -42,6 +42,7 @@ body {
   border-radius: 8px;
   padding: 20px 60px;
   min-height: 300px;
+  box-shadow: rgb(0, 0, 0, 0.45) 0px 2px 10px;
 }
 
 .session-box h3 {
