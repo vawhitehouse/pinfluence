@@ -17,7 +17,8 @@ export default ({ currentUser, logout }) => {
 
   return (
     <header>
-      <img src="assets/pinfluence-logo-purple.png" height="35px" width="35px" alt="Pinfluence Logo"/>
+      <img src={window.logoURL} height="35px" width="35px" alt="Pinfluence Logo"/>
+      {/* <img src="assets/pinfluence-logo-purple.png" height="35px" width="35px" alt="Pinfluence Logo"/> */}
       <div>
         {display}
       </div>
