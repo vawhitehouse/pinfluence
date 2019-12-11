@@ -3,7 +3,7 @@ import { login } from '../../actions/session_actions';
 import LoginForm from './login';
 
 const mapStateToProps = ({ errors }) => ({
-  user: { username: '', email: '', age: '', password: '' },
+  user: { email: '', age: '', password: '' },
   errors: errors.session
 });
 

@@ -38,8 +38,6 @@ class Signup extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <br/>
-          <input type="username" placeholder="Username" onChange={this.update('username')} />
-          <br />
           <input type="email" placeholder="Email" onChange={this.update('email')}/>
           <br/>
           <input type="password" placeholder="Password" onChange={this.update('password')}/>
