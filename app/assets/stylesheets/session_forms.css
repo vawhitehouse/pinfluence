@@ -14,15 +14,17 @@ body {
   min-height: 40px;
   border-radius: 8px;
   background-color: #efefef;
-  color: white;
+  
   border: 0px;
   padding: 10px 14px;
   font-size: 100%;
   margin: 30px 20px;
-
-
   cursor: pointer;
-  
+}
+
+.session-top-button a {
+  text-decoration: none;
+  color: #333333;
 }
 
 .session-box-container {

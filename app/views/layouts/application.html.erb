@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
 
-        <% if current_user %>
+    <% if current_user %>
       <script>
         window.currentUser = {
           "id": <%= current_user.id %>,
@@ -16,7 +16,11 @@
         };
       </script>
     <% end %>
-    
+
+    <script type="text/javascript">
+      window.logoURL = "<%= image_url('pinfluence-logo-purple.png') %>";
+    </script>
+
   </head>
 
   <body>

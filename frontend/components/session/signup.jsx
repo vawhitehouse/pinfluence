@@ -37,7 +37,8 @@ class Signup extends React.Component {
         <div className="session-box-container">
 
           <div className="session-box">
-            <img src="assets/pinfluence-logo-purple.png" height="45px" width="45px" alt="Pinfluence Logo" />
+            <img src={window.logoURL} height="45px" width="45px" alt="Pinfluence Logo" />
+            {/* <img src="assets/pinfluence-logo-purple.png" height="45px" width="45px" alt="Pinfluence Logo" /> */}
 
             <h3>Welcome to Pinfluence</h3>
             <p>Find new ideas to try</p>
