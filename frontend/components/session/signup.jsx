@@ -86,9 +86,11 @@ class Signup extends React.Component {
     }
   }
 
-
   render() {
-
+    const emailOutline = this.emailErrors() ? 'error-outline' : '';
+    const passwordOutline = this.passwordErrors() ? 'error-outline' : '';
+    const ageOutline = this.ageErrors() ? 'error-outline' : '';
+    
     return (
       <div className="session-container">
         <button className="session-top-button"><Link to='/login'>Log in</Link></button>
@@ -103,11 +105,11 @@ class Signup extends React.Component {
             <h5>Find new ideas to try</h5>
 
             <form onSubmit={this.handleSubmit} className="session-form">
-              <input className="session-form-input" type="text" placeholder="Email" value={this.state.email} onChange={this.update('email')}/>
+              <input className={`session-form-input ${emailOutline}`} type="text" placeholder="Email" value={this.state.email} onChange={this.update('email')}/>
               <span className="error" >{this.emailErrors()}</span>
-              <input className="session-form-input" type="password" placeholder="Enter password" value={this.state.password} onChange={this.update('password')}/>
+              <input className={`session-form-input ${passwordOutline}`} type="password" placeholder="Enter password" value={this.state.password} onChange={this.update('password')}/>
               <span className="error" >{this.passwordErrors()}</span>
-              <input className="session-form-input" type="text" placeholder="Age" value={this.state.age} onChange={this.update('age')}/>
+              <input className={`session-form-input ${ageOutline}`} type="text" placeholder="Age" value={this.state.age} onChange={this.update('age')}/>
               <span className="error" >{this.ageErrors()}</span>
               <input className="session-form-submit" type="submit" value="Continue" />
 

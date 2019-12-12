@@ -64,8 +64,8 @@ class Login extends React.Component {
   }
 
   emailErrors() {
-    // let emailErrors;
-    if (this.state.errors[0] === "You missed a spot! Don’t forget to add your email." || this.state.errors[0] === "Hmm...that doesn't look like an email address.") {
+    if (this.state.errors[0] === "You missed a spot! Don’t forget to add your email." 
+    || this.state.errors[0] === "Hmm...that doesn't look like an email address.") {
       return this.state.errors;
     }
   }
