@@ -20,9 +20,12 @@ class Board < ApplicationRecord
     foreign_key: :creator_id,
     class_name: :User
 
-  has_many :board_pins
+  has_many :pins
+  
+  # joins associations
+  # has_many :board_pins
 
-  has_many :pins, 
-    through: :board_pins
+  # has_many :pins, 
+  #   through: :board_pins
 
 end
