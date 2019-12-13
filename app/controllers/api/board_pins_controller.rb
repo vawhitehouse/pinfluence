@@ -4,7 +4,7 @@ class Api::BoardPinsController < ApplicationController
     board_pin = BoardPin.new(board_pin_params)
 
     if board_pin.save
-      # render json: board_pin, status: :created
+      render :show
     else
       render json: board_pin.errors.full_messages, status: 422
     end
