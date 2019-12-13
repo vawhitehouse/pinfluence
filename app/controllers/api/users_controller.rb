@@ -11,11 +11,8 @@ class Api::UsersController < ApplicationController
     if @user.save
       login!(@user)
       render "api/users/show"
-      
-      # render json: ['account created'], status: 200
     else 
       render json: @user.errors.full_messages, status: 422
-      # render :new
     end
   end
 

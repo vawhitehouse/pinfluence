@@ -12,7 +12,8 @@
 #
 
 class Board < ApplicationRecord
-  validates :board_name, :private, presence: true
+  validates :board_name, presence: true
+  validates :private, inclusion: { in: [true, false]}
 
   belongs_to :creator, 
     primary_key: :id, 
