@@ -19,6 +19,17 @@ class User < ApplicationRecord
   attr_reader :password 
   after_initialize :ensure_session_token
 
+  has_many :created_pins,
+    primary_key: :id,
+    foreign_key: :creator_id, 
+    class_name: :Pin
+
+  has_many :created_boards,
+    primary_key: :id,
+    foreign_key: :creator_id, 
+    class_name: :Board
+  
+
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
     user && user.is_password?(password) ? user : nil
