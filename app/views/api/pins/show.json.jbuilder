@@ -1,0 +1,1 @@
+json.extract @pin, :id, :title, :description, :link
