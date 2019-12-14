@@ -1,0 +1,27 @@
+.nav-bar-container {
+  background-color: white;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  margin: 0px;
+}
+
+#nav-bar-logo {
+  margin: 20px;
+  
+}
+
+.search-bar {
+  width: 100%;
+
+}
+
+.search-bar i {
+  position: absolute;
+}
+
+.icon { 
+    padding: 10px; 
+    min-width: 40px; 
+    z-index: 2;
+} 
