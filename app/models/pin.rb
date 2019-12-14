@@ -9,20 +9,24 @@
 #  creator_id  :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  board_id    :integer          not null
 #
 
 class Pin < ApplicationRecord
-  validates :title, :creator_id, presence: true
+  validates :title, :creator_id, :board_id, presence: true
 
   belongs_to :creator,
     primary_key: :id, 
     foreign_key: :creator_id,
     class_name: :User
 
-  has_many :board_pins
+  belongs_to :board
+
+  # joins associations
+  # has_many :board_pins
     
-  has_many :boards,
-    through: :board_pins
+  # has_many :boards,
+  #   through: :board_pins
 
 end
 
