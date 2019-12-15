@@ -39,9 +39,11 @@ export default ({ currentUser, logout }) => {
       <div className="nav-bar-link">{currentUser.email}</div>
 
       <div className="vertical-line"></div>
-      <i className="fas fa-comment-dots inbox"></i>
-      <i className="fas fa-bell notifications"></i>
-      <button onClick={logout}>Log out</button>
+
+      <div className="inbox-container"><i className="fas fa-comment-dots inbox"></i></div>
+      <div className="notifications-container"><i className="fas fa-bell notifications"></i></div>
+
+      <button className="nav-bar-logout-button" onClick={logout}>Log out</button>
     </header>
   );
 };

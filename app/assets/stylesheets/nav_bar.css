@@ -3,6 +3,8 @@ a {
 }
 
 .nav-bar-container {
+  width: 100%;
+  position: fixed;
   background-color: white;
   display: flex;
   height: 56px;
@@ -27,7 +29,7 @@ a {
 }
 
 .nav-bar-logo-container:hover {
-  background-color: rgba(155, 155, 155, 0.25);
+  background-color: rgba(38, 38, 38, 0.1);
 }
 
 .search-bar {
@@ -71,19 +73,49 @@ a {
 
 .nav-bar-link:hover {
   background-color: rgba(38, 38, 38, 0.1);
+  cursor: pointer;
 }
 
 .vertical-line {
   height: 30px;
   width: 24px;
   border-left: 2px solid #efefef;
+  margin: 5px;
+}
+
+.inbox-container, .notifications-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 5px;
+  /* padding: 10px; */
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  
 }
 
 .inbox, .notifications {
   color: #8E8E8E;
   text-align: center;
+  height: auto;
+  width: auto;
   font-size: 25px;
-  margin: 10px;
   transform: scale(0.9, 1.15);
+  padding: 5px;
 }
 
+.inbox-container:hover, .notifications-container:hover {
+  background-color: rgba(38, 38, 38, 0.1);
+  cursor: pointer;
+}
+
+.nav-bar-logout-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8E8E8E;
+  padding: 10px;
+  border-radius: 30px;
+  white-space: nowrap;
+  margin-right: 20px;
+}
