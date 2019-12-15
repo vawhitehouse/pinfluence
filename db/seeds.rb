@@ -7,5 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Pin.destroy_all
+Board.destroy_all
 
 demoUser = User.create!({ email: 'demoUser@demo.com', password: 'password', age: 27 })
+
+user1 = User.create!({ email: 'user1@test.com', password: 'password', age: 25, id: 1 })
+
+board1 = Board.create!({ board_name: 'Travel', creator_id: 1, id: 1 })
+
+pin1 = Pin.create!({ title: 'Cinque Terra', creator_id: 1, board_id: 1, id: 1 })
+
+

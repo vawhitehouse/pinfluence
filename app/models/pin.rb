@@ -22,6 +22,8 @@ class Pin < ApplicationRecord
 
   belongs_to :board
 
+  has_one_attached :image
+
   # joins associations
   # has_many :board_pins
     

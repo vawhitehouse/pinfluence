@@ -4,7 +4,7 @@ a {
 
 .nav-bar-container {
   width: 100%;
-  position: fixed;
+  position: sticky;
   background-color: white;
   display: flex;
   height: 56px;
@@ -24,9 +24,9 @@ a {
   border-radius: 50%;
 }
 
-#nav-bar-logo {
+/* #nav-bar-logo {
   
-}
+} */
 
 .nav-bar-logo-container:hover {
   background-color: rgba(38, 38, 38, 0.1);
