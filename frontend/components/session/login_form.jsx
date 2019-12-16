@@ -99,8 +99,7 @@ class LoginForm extends React.Component {
               <span className="error">{this.passwordErrors()}</span>
 
               <input className="session-form-submit" type="submit" value="Log in" />
-              <button onClick={this.
-                Login} className="demo-login-button">Demo Log in</button>
+              <button onClick={this.demoLogin} className="demo-login-button">Demo Log in</button>
 
               <p>By continuing, you agree to Pinfluence's <a>Terms of Service</a>, <a>Privacy Policy</a></p>
               <div className="horizontal-line"></div>

@@ -4195,3 +4195,110 @@ FOREIGN KEY ("blob_id")
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c8aef185-c886-44ae-9521-07a92b791759]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c8aef185-c886-44ae-9521-07a92b791759]   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
 [ActiveJob] [ActiveStorage::AnalyzeJob] [c8aef185-c886-44ae-9521-07a92b791759] Performed ActiveStorage::AnalyzeJob (Job ID: c8aef185-c886-44ae-9521-07a92b791759) from Async(default) in 190.51ms
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (3.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPin Load (0.7ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPin Destroy (0.3ms)[0m  [1m[31mDELETE FROM "pins" WHERE "pins"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mActiveStorage::Attachment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8] Performing ActiveStorage::PurgeJob (Job ID: 25100829-db05-4cbc-afe6-209be8e153e8) from Inline(default) with arguments: #<GlobalID:0x00007fa16c49aec0 @uri=#<URI::GID gid://pinfluence/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   [1m[36mActiveStorage::Attachment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   [1m[36mActiveStorage::Blob Destroy (1.6ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8]   ↳ db/seeds.rb:10
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8] [36m  S3 Storage (145.4ms) [0m[31mDeleted file from key: PNKyzM588Bonyo3XZfakjh4w[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8] [36m  S3 Storage (36.4ms) [0m[31mDeleted files by key prefix: variants/PNKyzM588Bonyo3XZfakjh4w/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [25100829-db05-4cbc-afe6-209be8e153e8] Performed ActiveStorage::PurgeJob (Job ID: 25100829-db05-4cbc-afe6-209be8e153e8) from Inline(default) in 204.56ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 25100829-db05-4cbc-afe6-209be8e153e8) to Inline(default) with arguments: #<GlobalID:0x00007fa16c28db50 @uri=#<URI::GID gid://pinfluence/ActiveStorage::Blob/1>>
+  [1m[36mBoard Load (6.1ms)[0m  [1m[34mSELECT "boards".* FROM "boards"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mBoard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "boards" WHERE "boards"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (33.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demoUser@demo.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "-uqV1dhH3qpf3jiVWXDYLA"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "age", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "demoUser@demo.com"], ["age", 27], ["password_digest", "$2a$12$Yrlz37Io2162L9WmWzQkmebQshu3Ow/BOdYWYBqEfZKU45ztwoZvi"], ["session_token", "-uqV1dhH3qpf3jiVWXDYLA"], ["created_at", "2019-12-16 00:12:47.057561"], ["updated_at", "2019-12-16 00:12:47.057561"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "user1@test.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Eh76ZrfReCBU8q3Mc8vGSw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "age", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["id", 1], ["email", "user1@test.com"], ["age", 25], ["password_digest", "$2a$12$k3f7C/r7ntAEwDcp83DizeafSnd7v/N8HhhHbWK7cPy6RwdBA1hFa"], ["session_token", "Eh76ZrfReCBU8q3Mc8vGSw"], ["created_at", "2019-12-16 00:12:47.271609"], ["updated_at", "2019-12-16 00:12:47.271609"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:17
+  [1m[36mBoard Create (0.3ms)[0m  [1m[32mINSERT INTO "boards" ("id", "board_name", "creator_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 1], ["board_name", "Travel"], ["creator_id", 1], ["created_at", "2019-12-16 00:12:47.277399"], ["updated_at", "2019-12-16 00:12:47.277399"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mPin Create (0.3ms)[0m  [1m[32mINSERT INTO "pins" ("id", "title", "creator_id", "created_at", "updated_at", "board_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["title", "Cinque Terra"], ["creator_id", 1], ["created_at", "2019-12-16 00:12:47.284158"], ["updated_at", "2019-12-16 00:12:47.284158"], ["board_id", 1]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mBoard Load (0.2ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mPin Create (0.3ms)[0m  [1m[32mINSERT INTO "pins" ("id", "title", "creator_id", "created_at", "updated_at", "board_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 2], ["title", "Easter Island"], ["creator_id", 1], ["created_at", "2019-12-16 00:12:47.287671"], ["updated_at", "2019-12-16 00:12:47.287671"], ["board_id", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
