@@ -30,7 +30,7 @@ export default ({ currentUser, logout }) => {
 
       <div className="search-bar">
         <i className="fas fa-search"></i>
-        <input className="search-input" type="text" placeholder="Search for Tiny House Design"/>
+        <input className="search-input" type="text" placeholder="Search for Travel Destinations"/>
       </div>
 
 

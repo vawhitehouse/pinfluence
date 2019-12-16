@@ -24,10 +24,6 @@ a {
   border-radius: 50%;
 }
 
-/* #nav-bar-logo {
-  
-} */
-
 .nav-bar-logo-container:hover {
   background-color: rgba(38, 38, 38, 0.1);
 }
@@ -88,9 +84,9 @@ a {
   align-items: center;
   justify-items: center;
   margin: 5px;
-  /* padding: 10px; */
-  height: 55px;
-  width: 55px;
+  padding: 5px;
+  height: 40px;
+  /* width: 55px; */
   border-radius: 50%;
   
 }
@@ -118,4 +114,8 @@ a {
   border-radius: 30px;
   white-space: nowrap;
   margin-right: 20px;
+}
+
+.nav-bar-logout-button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
 }

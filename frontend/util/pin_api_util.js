@@ -16,7 +16,9 @@ export const createPin = (pin) => (
   $.ajax({
     methos: 'POST',
     url: '/api/pins',
-    data: { pin }
+    data: { pin },
+    contentType: false,
+    processData: false
   })
 );
 

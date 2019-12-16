@@ -20,10 +20,12 @@ const removePin = (pinId )=> ({
   pinId
 });
 
-const receiveErrors = errors => ({
+const receiveErrors = errors => {
+  // debugger
+  return ({
   type: RECEIVE_PIN_ERRORS,
   errors
-});
+})};
 
 export const fetchAllPins = () => dispatch => (
   PinApiUtil.fetchAllPins().then(pins => (

@@ -1,3 +1,37 @@
 .pin-index-container {
   margin-top: 28px;
+  width: 100%;
 }
+
+.pii-container {
+  display: inline-block;
+  margin: 0 0 1px;
+  width: 100%;
+} */
+
+.create-pin-button {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px;
+  margin: 22px 13px;
+}
+
+.create-pin-button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.fa-plus {
+  color: #333333;
+  font-size: 18px;
+}
+

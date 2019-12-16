@@ -9,7 +9,7 @@ const pinErrorsReducer = (state = [], action) => {
     case RECEIVE_PIN:
       return [];
     default:
-      return [];
+      return state;
   }
 };
 
