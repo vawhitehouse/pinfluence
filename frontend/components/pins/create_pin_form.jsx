@@ -1,16 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 class CreatePinForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      board_id: 1, // remove after creating boards
       title: '',
-      desription: '',
+      description: '',
       link: '',
       imageFile: null,
       imageUrl: null,
-      errors: this.props.errors
+      errors: this.props.errors,
+      redirectToShow: false
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,6 +23,10 @@ class CreatePinForm extends React.Component {
     e.preventDefault();
 
     const formData = new FormData();
+
+    // remove after creating boards
+    formData.append('pin[board_id]', this.state.board_id);
+    // 
     formData.append('pin[title]', this.state.title);
     formData.append('pin[description]', this.state.description);
     formData.append('pin[link]', this.state.link);
@@ -28,14 +34,14 @@ class CreatePinForm extends React.Component {
     if (this.state.imageFile) {
       formData.append('pin[image]', this.state.imageFile);
     }
-      // ajax(pin_api_util.js) also needs:
-        // contentType: false,
-        // processData: false
 
     this.props.createPin(formData)
-      .then(null, (err) => {
-        this.setState({ errors: this.renderErrors() })
-      });
+      .then(
+        this.setState({ redirectToShow: true }), 
+        (err) => {
+          this.setState({ errors: this.renderErrors() })
+        } 
+      );
   }
 
   handleFile(e) {
@@ -43,7 +49,7 @@ class CreatePinForm extends React.Component {
     const file = e.currentTarget.files[0];
     const fileReader = new FileReader();
     fileReader.onloadend = () => {
-      this.setState({ photoFile: file, photoUrl: fileReader.result })
+      this.setState({ imageFile: file, imageUrl: fileReader.result })
     };
     if (file) {
       fileReader.readAsDataURL(file);
@@ -55,7 +61,7 @@ class CreatePinForm extends React.Component {
   }
 
   renderErrors() {
-    let blankTitleError = [];
+    // let blankTitleError = [];
 
     const allErrors = this.props.errors.map((error, i) => (
       <li key={i}>{error}</li>
@@ -67,29 +73,74 @@ class CreatePinForm extends React.Component {
   }
 
   render() {
-    const imagePreview = this.state.photoUrl ? <img src={this.state.photoUrl} /> : null;
+    const imagePreview = this.state.imageUrl ? <img src={this.state.imageUrl} /> : null;
+
+    if (this.state.redirectToShow) {
+      return (
+        <Redirect to="/"/>
+      )
+    }
+
     return (
       <div className="create-pin-container">
-        <div className="top-row">
-          <div className="top-row-buttons">
-            {/* <button>Board</button>
-            <button>Save</button> */}
+        <div className="create-pin-form-box-container">
+
+          <div className="create-pin-form-box">
+            <form onSubmit={this.handleSubmit} className="create-pin-form">
+
+              <div className="grid-1-2">
+                <div className="create-pin-select-button">Select</div>
+                <input className="create-pin-save-button" type="submit" value="Save" />
+              </div>
+
+              <div className="grid-2-1">
+                  <div className="image-preview-container">
+                    {imagePreview}
+                  </div>
+                <div className="create-pin-image-container">
+                  <i className="fas fa-arrow-up"></i>
+                  <p>Drag and drop or click to upload</p>
+                  <input type="file" className="create-pin-image-input" onChange={this.handleFile} />
+                </div>
+              </div>
+
+              <div className="grid-2-2">
+                <div className="create-pin-title-container">
+                  <textarea className="create-pin-title-textarea" rows="1"
+                    placeholder="Add your title" 
+                    value={this.state.title} 
+                    onChange={this.update('title')}/>
+                </div>
+             
+                <div className="create-pin-description-container">
+                  <textarea className="create-pin-description-textarea" rows="1" 
+                    placeholder="Tell everyone what your Pin is about"
+                    value={this.state.description}
+                    onChange={this.update('description')}
+                  />
+                </div>
+              </div>
+
+              <div className="grid-3-2">
+                <div className="create-pin-link-container">
+                  <textarea className="create-pin-link-textarea" rows="1" 
+                    placeholder="Add a destination link"
+                    value={this.state.link}
+                    onChange={this.update('link')}
+                  />
+                </div>
+              </div>
+
+              <div className="grid-3-1">
+                <div className="create-pin-save-site-button">Save from site</div>
+              </div>
+
+              {/* <div className="grid-1-1">grid-1-1</div> */}
+              
+            
+            </form>
           </div>
         </div>
-
-        <div className="create-pin-form-container">
-          <form onSubmit={this.handleSubmit}>
-
-            <input type="text" placeholder="Add your title"/>
-
-            <input type="file" onChange={this.handleFile}/>
-            {imagePreview}
-            
-            <input type="submit" value="Save"/>
-            
-          </form>
-        </div>
-
       </div>
     )
   }

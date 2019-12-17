@@ -1,6 +1,6 @@
 import React from 'react';
 import PinIndexItem from './pin_index_item';
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 class PinIndex extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class PinIndex extends React.Component {
 
         <button className="create-pin-button">
           <Link to="/create-pin" >
-            <i class="fas fa-plus"></i>
+            <i className="fas fa-plus"></i>
           </Link>
         </button>
       </div>

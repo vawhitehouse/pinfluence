@@ -31,6 +31,7 @@ a {
 .search-bar {
   display: flex;
   width: 100%;
+  min-width: 114px;
   height: 42px;
   margin: 0px 10px;
 }
@@ -114,6 +115,7 @@ a {
   border-radius: 30px;
   white-space: nowrap;
   margin-right: 20px;
+  outline: none;
 }
 
 .nav-bar-logout-button:hover {

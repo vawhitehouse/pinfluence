@@ -16,7 +16,7 @@ user1 = User.create!({ email: 'user1@test.com', password: 'password', age: 25, i
 
 board1 = Board.create!({ board_name: 'Travel', creator_id: 1, id: 1 })
 
-pin1 = Pin.create!({ title: 'Cinque Terra', creator_id: 1, board_id: 1, id: 1 })
-pin2 = Pin.create!({ title: 'Easter Island', creator_id: 1, board_id: 1, id: 2 })
+pin1 = Pin.create!({ title: 'Cinque Terra', creator_id: 1, board_id: 1 })
+# pin2 = Pin.create!({ title: 'Easter Island', creator_id: 1, board_id: 1})
 
 

@@ -5,4 +5,4 @@
   end
 end
 
-# p.image.attach(io: File.open("/Users/valeriewhitehouse/Documents/fullstack/pins/travel/cinque_terre.jpg"), filename: "cinque_terre.jpg")
+# aws console: {p}.image.attach(io: File.open("/Users/valeriewhitehouse/Documents/fullstack/pins/travel/cinque_terre.jpg"), filename: "cinque_terre.jpg")

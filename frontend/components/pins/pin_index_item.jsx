@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PinIndexItem = props => (
   <div className="pii-container">
-    <li className="pin-index-item">
+    <li className="pin-index-item" key={props.pin.id}>
       <img src={props.pin.imageUrl} alt={props.pin.title} className="pii-image"/>
       <h4>{props.pin.title}</h4>
       {/* <Link to={`/pins/${props.pin.id}/edit`}>Edit</Link> */}
