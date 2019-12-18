@@ -93,15 +93,18 @@
 }
 
 
-input.create-pin-image-input {
+.create-pin-image-input {
   cursor: pointer;
   outline: none;
-  width: 100%;
-  height: 100%;
+  height: 428px;
   width: 312px;
   opacity: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
+  top: 14px;
+  right: 0px;
+  left: 14px;
+  bottom: 0;
 }
 
 .fa-arrow-up {
@@ -133,6 +136,7 @@ input.create-pin-image-input {
 
 
 .create-pin-title-textarea {
+  outline: none;
   resize: none;
   font-size: 36px;
   color: #333333;
@@ -194,6 +198,7 @@ input.create-pin-image-input {
   grid-column: 1;
   background-color: #efefef;
   border-radius: 8px;
+  position: relative;
 }
 
 .grid-2-2 {

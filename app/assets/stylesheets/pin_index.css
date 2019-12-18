@@ -1,7 +1,5 @@
 .pin-index-container {
   margin-top: 28px ;
-  /* width: 100vw; */
-  /* display: flex; */
 }
 
 .grid {
@@ -16,9 +14,9 @@
   width: 250px;
 } 
 
-.grid-item-content {
+/* .grid-item-content {
   
-}
+} */
 
 .create-pin-button {
   position: fixed;
