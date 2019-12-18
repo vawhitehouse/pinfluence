@@ -20,7 +20,7 @@ class PinIndex extends React.Component {
       
       <div className="pin-index-container">
 
-        <ul className="masonry">
+        <ul className="index-grid">
           {allPins}
         </ul>
 

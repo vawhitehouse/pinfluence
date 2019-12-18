@@ -18249,3 +18249,1173 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 288ms (Views: 286.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2019-12-17 18:08:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 210ms (Views: 207.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:08:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 110ms (Views: 104.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:09:07 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:09:38 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:11:58 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 138ms (Views: 135.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:17:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 546ms (Views: 543.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:20:11 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 713ms (Views: 707.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:20:34 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 80ms (Views: 74.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:20:37 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:22:03 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 383ms (Views: 380.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:22:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 820ms (Views: 816.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:22:56 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 63ms (Views: 60.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:24:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 464ms (Views: 461.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:24:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 114ms (Views: 105.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:25:52 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 200ms (Views: 197.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:26:07 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 88ms (Views: 84.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:26:19 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:27:28 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 141ms (Views: 135.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:28:38 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:28:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:28:57 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 49ms (Views: 45.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:29:04 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:29:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 18:29:15 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (5.5ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (109.8ms)
+Completed 200 OK in 126ms (Views: 111.5ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c/cinque_terre.jpg" for ::1 at 2019-12-17 18:29:15 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d/easter_island.jpg" for ::1 at 2019-12-17 18:29:15 -0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c", "filename"=>"cinque_terre"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241/lavender_field.jpg" for ::1 at 2019-12-17 18:29:15 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b/quote.jpg" for ::1 at 2019-12-17 18:29:15 -0500
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (41.7ms) [0m[34mGenerated URL for file at key: z8PqTtM2FKg3pcJxuhR4TEYC (https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=598a45890226c16556e435777ae60e99ae94a48851f9c96a78a22db790ac2846)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=598a45890226c16556e435777ae60e99ae94a48851f9c96a78a22db790ac2846
+Completed 302 Found in 72ms (ActiveRecord: 0.7ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d", "filename"=>"easter_island"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b", "filename"=>"quote"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241", "filename"=>"lavender_field"}
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.3ms) [0m[34mGenerated URL for file at key: fzTD9K9ariQvgT4TX5gbPoQ3 (https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=85ce0380a38df08b03842078ae386a6ef1208c01c49c96131d7419ad564a0278)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=85ce0380a38df08b03842078ae386a6ef1208c01c49c96131d7419ad564a0278
+Completed 302 Found in 11ms (ActiveRecord: 3.1ms)
+
+
+  [1m[36mActiveStorage::Blob Load (2.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.4ms) [0m[34mGenerated URL for file at key: tGWpqZLT1Qt3NhNgZhaCiaWa (https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e0ebb338078397de7507f5b34980cb4d605497b5df25d6e7aff4393b25547071)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e0ebb338078397de7507f5b34980cb4d605497b5df25d6e7aff4393b25547071
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms)
+
+
+[36m  S3 Storage (1.0ms) [0m[34mGenerated URL for file at key: WWSaAa7HNAjLtNWtV1AcuoXD (https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d07da4bdab10e9ec690508660d3850c353353e3dbfb04e4564bf1fdd884c2572)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191217T232915Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=d07da4bdab10e9ec690508660d3850c353353e3dbfb04e4564bf1fdd884c2572
+Completed 302 Found in 16ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:29:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:30:39 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 170ms (Views: 167.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:32:00 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 190ms (Views: 184.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:32:11 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:36:35 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 769ms (Views: 759.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:37:33 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.6ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 331ms (Views: 309.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:41:14 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 446ms (Views: 410.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:41:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 286ms (Views: 276.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:42:04 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 264ms (Views: 257.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:43:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 233ms (Views: 227.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:44:27 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 251ms (Views: 244.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:44:32 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:47:23 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 820ms (Views: 811.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:48:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.7ms)
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1085ms (Views: 1065.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:48:33 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1807ms (Views: 1789.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:49:16 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1066ms (Views: 1046.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:49:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.6ms)
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 796ms (Views: 773.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:50:08 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 1092ms (Views: 1066.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:50:33 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 811ms (Views: 803.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:51:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 274ms (Views: 267.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:51:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 139ms (Views: 135.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:52:22 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:52:50 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 160ms (Views: 157.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:55:10 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 536ms (Views: 530.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:55:42 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 500ms (Views: 497.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:57:23 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 420ms (Views: 417.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:59:08 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 499ms (Views: 495.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 18:59:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:01:13 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (18.0ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (10.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (3.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (4.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (153.8ms)
+Completed 200 OK in 170ms (Views: 119.6ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241/lavender_field.jpg" for ::1 at 2019-12-17 19:01:13 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d/easter_island.jpg" for ::1 at 2019-12-17 19:01:13 -0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b/quote.jpg" for ::1 at 2019-12-17 19:01:13 -0500
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241", "filename"=>"lavender_field"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c/cinque_terre.jpg" for ::1 at 2019-12-17 19:01:13 -0500
+Started POST "/api/pins" for ::1 at 2019-12-17 19:01:13 -0500
+  [1m[36mActiveStorage::Blob Load (30.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (33.3ms) [0m[34mGenerated URL for file at key: tGWpqZLT1Qt3NhNgZhaCiaWa (https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000113Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fb58bff9e98e46445deb2640b2b264e6d65cb2ac363c35a9edad01c1f761a472)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000113Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=fb58bff9e98e46445deb2640b2b264e6d65cb2ac363c35a9edad01c1f761a472
+Completed 302 Found in 71ms (ActiveRecord: 30.0ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c", "filename"=>"cinque_terre"}
+Processing by Api::PinsController#create as JSON
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d", "filename"=>"easter_island"}
+  Parameters: {"pin"=>{"board_id"=>"1", "title"=>"Off Season Travel Spots", "description"=>"", "link"=>"", "errors"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f944b0c68e0 @tempfile=#<Tempfile:/var/folders/hq/p2cr5xsx0nbd15q7cbtmqs100000gn/T/RackMultipart20191217-95066-1037316.jpg>, @original_filename="off_season_travel_spots.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"off_season_travel_spots.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b", "filename"=>"quote"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (1.5ms) [0m[34mGenerated URL for file at key: z8PqTtM2FKg3pcJxuhR4TEYC (https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2463ab2c1068802c2c1098502d170c76bc4d9c15c75cb712f221d664455fe497)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2463ab2c1068802c2c1098502d170c76bc4d9c15c75cb712f221d664455fe497
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms)
+
+
+  [1m[36mActiveStorage::Blob Load (3.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :errors
+  [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.0ms) [0m[34mGenerated URL for file at key: fzTD9K9ariQvgT4TX5gbPoQ3 (https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=8a7590117e9611de37c86e901742920754cc43cefcc6b8595d73a4cfffae3ce2)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=8a7590117e9611de37c86e901742920754cc43cefcc6b8595d73a4cfffae3ce2
+[36m  S3 Storage (6.8ms) [0m[34mGenerated URL for file at key: WWSaAa7HNAjLtNWtV1AcuoXD (https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c0cc968e5f71f5574aea928261fa55a85ea5e0b7495e6170158cfec6191f75b2)[0m
+Completed 302 Found in 41ms (ActiveRecord: 7.0ms)
+
+
+Redirected to https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c0cc968e5f71f5574aea928261fa55a85ea5e0b7495e6170158cfec6191f75b2
+Completed 302 Found in 57ms (ActiveRecord: 3.4ms)
+
+
+[36m  S3 Storage (334.6ms) [0m[32mUploaded file to key: yNwCRrkJkJK42aFYTk5TUoHH (checksum: Bo4C8PZuIk/ywiPuFPJkJg==)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pins_controller.rb:15
+  [1m[36mActiveStorage::Blob Create (17.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "yNwCRrkJkJK42aFYTk5TUoHH"], ["filename", "off_season_travel_spots.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 169207], ["checksum", "Bo4C8PZuIk/ywiPuFPJkJg=="], ["created_at", "2019-12-18 00:01:14.455728"]]
+  ↳ app/controllers/api/pins_controller.rb:15
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/pins_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pins_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/pins_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[36mBoard Load (6.4ms)[0m  [1m[34mSELECT  "boards".* FROM "boards" WHERE "boards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[36mPin Create (4.7ms)[0m  [1m[32mINSERT INTO "pins" ("title", "description", "link", "creator_id", "created_at", "updated_at", "board_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Off Season Travel Spots"], ["description", ""], ["link", ""], ["creator_id", 7], ["created_at", "2019-12-18 00:01:14.517404"], ["updated_at", "2019-12-18 00:01:14.517404"], ["board_id", 1]]
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[36mActiveStorage::Attachment Create (13.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "image"], ["record_type", "Pin"], ["record_id", 6], ["blob_id", 10], ["created_at", "2019-12-18 00:01:14.525179"]]
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[36mPin Update (8.2ms)[0m  [1m[33mUPDATE "pins" SET "updated_at" = $1 WHERE "pins"."id" = $2[0m  [["updated_at", "2019-12-18 00:01:14.541648"], ["id", 6]]
+  ↳ app/controllers/api/pins_controller.rb:17
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/pins_controller.rb:17
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e9b82c4f-626d-431b-ad6f-9508717de5bc) to Async(default) with arguments: #<GlobalID:0x00007f94538a0540 @uri=#<URI::GID gid://pinfluence/ActiveStorage::Blob/10>>
+  Rendering api/pins/show.json.jbuilder
+  Rendered api/pins/show.json.jbuilder (4.3ms)
+Completed 200 OK in 718ms (Views: 15.0ms | ActiveRecord: 64.4ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc] Performing ActiveStorage::AnalyzeJob (Job ID: e9b82c4f-626d-431b-ad6f-9508717de5bc) from Async(default) with arguments: #<GlobalID:0x00007f94517a23c0 @uri=#<URI::GID gid://pinfluence/ActiveStorage::Blob/10>>
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--360a9c96dd07eae08626726eec06aa387a1725b7/off_season_travel_spots.jpg" for ::1 at 2019-12-17 19:01:14 -0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--360a9c96dd07eae08626726eec06aa387a1725b7", "filename"=>"off_season_travel_spots"}
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (2.4ms) [0m[34mGenerated URL for file at key: yNwCRrkJkJK42aFYTk5TUoHH (https://pinfluence-dev.s3.amazonaws.com/yNwCRrkJkJK42aFYTk5TUoHH?response-content-disposition=inline%3B%20filename%3D%22off_season_travel_spots.jpg%22%3B%20filename%2A%3DUTF-8%27%27off_season_travel_spots.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=057ec00e0d1409968a388c7f3b480a9de37c5416568cb5393aa99fd9d57de44c)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/yNwCRrkJkJK42aFYTk5TUoHH?response-content-disposition=inline%3B%20filename%3D%22off_season_travel_spots.jpg%22%3B%20filename%2A%3DUTF-8%27%27off_season_travel_spots.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000114Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=057ec00e0d1409968a388c7f3b480a9de37c5416568cb5393aa99fd9d57de44c
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc] [36m  S3 Storage (109.2ms) [0m[34mDownloaded file from key: yNwCRrkJkJK42aFYTk5TUoHH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   [1m[36mActiveStorage::Blob Update (3.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 10]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc]   ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e9b82c4f-626d-431b-ad6f-9508717de5bc] Performed ActiveStorage::AnalyzeJob (Job ID: e9b82c4f-626d-431b-ad6f-9508717de5bc) from Async(default) in 129.58ms
+Started GET "/" for ::1 at 2019-12-17 19:03:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 96ms (Views: 93.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:03:14 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (34.3ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (2.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (5.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (4.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (91.7ms)
+Completed 200 OK in 102ms (Views: 51.0ms | ActiveRecord: 50.6ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:03:22 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (0.3ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (18.6ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 19:03:58 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 461ms (Views: 457.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:03:59 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (60.6ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (34.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (4.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (7.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (4.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (160.9ms)
+Completed 200 OK in 170ms (Views: 46.5ms | ActiveRecord: 123.3ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:04:16 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (0.4ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (68.4ms)
+Completed 200 OK in 77ms (Views: 73.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 19:06:30 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 488ms (Views: 484.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:06:31 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (36.9ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (34.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (3.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (8.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (15.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (17.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (9.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (19.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (17.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (213.1ms)
+Completed 200 OK in 225ms (Views: 60.8ms | ActiveRecord: 163.6ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c/cinque_terre.jpg" for ::1 at 2019-12-17 19:06:31 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241/lavender_field.jpg" for ::1 at 2019-12-17 19:06:31 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d/easter_island.jpg" for ::1 at 2019-12-17 19:06:31 -0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e136c19190a43e3e7f16c9a1821c8a303e32bf3c", "filename"=>"cinque_terre"}
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b/quote.jpg" for ::1 at 2019-12-17 19:06:31 -0500
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--360a9c96dd07eae08626726eec06aa387a1725b7/off_season_travel_spots.jpg" for ::1 at 2019-12-17 19:06:31 -0500
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f41478ce598f79ab5649b8452e4135215b9e8241", "filename"=>"lavender_field"}
+  [1m[36mActiveStorage::Blob Load (7.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (28.3ms) [0m[34mGenerated URL for file at key: z8PqTtM2FKg3pcJxuhR4TEYC (https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0775f0933652eaa3cf5b868e9e55046c9d886598cc10e3916aa811e62d9426de)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/z8PqTtM2FKg3pcJxuhR4TEYC?response-content-disposition=inline%3B%20filename%3D%22cinque_terre.jpg%22%3B%20filename%2A%3DUTF-8%27%27cinque_terre.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0775f0933652eaa3cf5b868e9e55046c9d886598cc10e3916aa811e62d9426de
+Completed 302 Found in 44ms (ActiveRecord: 7.5ms)
+
+
+  [1m[36mActiveStorage::Blob Load (37.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (7.1ms) [0m[34mGenerated URL for file at key: tGWpqZLT1Qt3NhNgZhaCiaWa (https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bca761fa8a3f30397733db452849957204ce09caf1f8e90657be7774cdf1ad84)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/tGWpqZLT1Qt3NhNgZhaCiaWa?response-content-disposition=inline%3B%20filename%3D%22lavender_field.jpg%22%3B%20filename%2A%3DUTF-8%27%27lavender_field.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=bca761fa8a3f30397733db452849957204ce09caf1f8e90657be7774cdf1ad84
+Completed 302 Found in 47ms (ActiveRecord: 37.8ms)
+
+
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4117f70bd1b43224325cbcf3b6f4461f90a3628d", "filename"=>"easter_island"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--360a9c96dd07eae08626726eec06aa387a1725b7", "filename"=>"off_season_travel_spots"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBEZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a6c334f2380f946fab69ec0ade0642dfc824467b", "filename"=>"quote"}
+  [1m[36mActiveStorage::Blob Load (5.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (5.5ms) [0m[34mGenerated URL for file at key: fzTD9K9ariQvgT4TX5gbPoQ3 (https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=aeee0d86bad23defc1a821760af33c7152e1fb748039b7f1036f7cbb93c58ec2)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/fzTD9K9ariQvgT4TX5gbPoQ3?response-content-disposition=inline%3B%20filename%3D%22easter_island.jpg%22%3B%20filename%2A%3DUTF-8%27%27easter_island.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=aeee0d86bad23defc1a821760af33c7152e1fb748039b7f1036f7cbb93c58ec2
+  [1m[36mActiveStorage::Blob Load (9.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (6.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/valeriewhitehouse/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4/lib/active_record/log_subscriber.rb:98
+Completed 302 Found in 25ms (ActiveRecord: 10.7ms)
+
+
+[36m  S3 Storage (5.6ms) [0m[34mGenerated URL for file at key: WWSaAa7HNAjLtNWtV1AcuoXD (https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12da326c962a879b701bee234b869ea7549cde4d3e7822db6804b6534130be18)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/WWSaAa7HNAjLtNWtV1AcuoXD?response-content-disposition=inline%3B%20filename%3D%22quote.jpg%22%3B%20filename%2A%3DUTF-8%27%27quote.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=12da326c962a879b701bee234b869ea7549cde4d3e7822db6804b6534130be18
+[36m  S3 Storage (5.8ms) [0m[34mGenerated URL for file at key: yNwCRrkJkJK42aFYTk5TUoHH (https://pinfluence-dev.s3.amazonaws.com/yNwCRrkJkJK42aFYTk5TUoHH?response-content-disposition=inline%3B%20filename%3D%22off_season_travel_spots.jpg%22%3B%20filename%2A%3DUTF-8%27%27off_season_travel_spots.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a88de055ba3dc74901164db20e3a7cf5d57d5b809ad6db8cea6c655d7bd7e38d)[0m
+Redirected to https://pinfluence-dev.s3.amazonaws.com/yNwCRrkJkJK42aFYTk5TUoHH?response-content-disposition=inline%3B%20filename%3D%22off_season_travel_spots.jpg%22%3B%20filename%2A%3DUTF-8%27%27off_season_travel_spots.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZWAIRHCKWWEV3IO7%2F20191218%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191218T000631Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=a88de055ba3dc74901164db20e3a7cf5d57d5b809ad6db8cea6c655d7bd7e38d
+Completed 302 Found in 36ms (ActiveRecord: 11.7ms)
+
+
+Completed 302 Found in 37ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 19:06:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 171ms (Views: 166.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:06:43 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (9.8ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (7.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (11.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (7.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (9.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (86.4ms)
+Completed 200 OK in 95ms (Views: 41.7ms | ActiveRecord: 52.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-17 19:06:59 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pUQq55sY6ay4EtWDN_JVpw"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 172ms (Views: 168.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/pins" for ::1 at 2019-12-17 19:06:59 -0500
+Processing by Api::PinsController#index as JSON
+  Rendering api/pins/index.json.jbuilder
+  [1m[36mPin Load (2.2ms)[0m  [1m[34mSELECT "pins".* FROM "pins"[0m
+  ↳ app/views/api/pins/index.json.jbuilder:1
+  [1m[36mActiveStorage::Attachment Load (71.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (39.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (36.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (13.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Pin"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/api/pins/index.json.jbuilder:4
+  Rendered api/pins/index.json.jbuilder (193.0ms)
+Completed 200 OK in 206ms (Views: 38.8ms | ActiveRecord: 166.9ms)
+
+

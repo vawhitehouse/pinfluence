@@ -81,6 +81,10 @@ class CreatePinForm extends React.Component {
       )
     }
 
+    const displayNone = imagePreview ? 'display-none' : '';
+    const display = !imagePreview ? 'display-none' : '';
+    
+
     return (
       <div className="create-pin-container">
         <div className="create-pin-form-box-container">
@@ -88,20 +92,27 @@ class CreatePinForm extends React.Component {
           <div className="create-pin-form-box">
             <form onSubmit={this.handleSubmit} className="create-pin-form">
 
+              {/* <div className="grid-1-1">grid-1-1</div> */}
+
               <div className="grid-1-2">
                 <div className="create-pin-select-button">Select</div>
                 <input className="create-pin-save-button" type="submit" value="Save" />
               </div>
 
               <div className="grid-2-1">
-                  <div className="image-preview-container">
-                    {imagePreview}
-                  </div>
-                <div className="create-pin-image-container">
+
+                <div className="image-preview-container">
+                  <input type="file" className="create-pin-image-input" id={display} onChange={this.handleFile} />
+                  {imagePreview}
+                </div>
+
+                <input type="file" className="create-pin-image-input" onChange={this.handleFile} />
+
+                <div className="create-pin-image-container" id={displayNone}>
                   <i className="fas fa-arrow-up"></i>
                   <p>Drag and drop or click to upload</p>
-                  <input type="file" className="create-pin-image-input" onChange={this.handleFile} />
                 </div>
+
               </div>
 
               <div className="grid-2-2">
@@ -121,6 +132,10 @@ class CreatePinForm extends React.Component {
                 </div>
               </div>
 
+              <div className="grid-3-1">
+                <div className="create-pin-save-site-button" id={displayNone}>Save from site</div>
+              </div>
+              
               <div className="grid-3-2">
                 <div className="create-pin-link-container">
                   <textarea className="create-pin-link-textarea" rows="1" 
@@ -131,13 +146,6 @@ class CreatePinForm extends React.Component {
                 </div>
               </div>
 
-              <div className="grid-3-1">
-                <div className="create-pin-save-site-button">Save from site</div>
-              </div>
-
-              {/* <div className="grid-1-1">grid-1-1</div> */}
-              
-            
             </form>
           </div>
         </div>

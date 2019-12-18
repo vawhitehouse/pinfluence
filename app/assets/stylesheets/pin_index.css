@@ -1,6 +1,13 @@
 .pin-index-container {
   margin-top: 28px;
   width: 100%;
+  display: flex;
+}
+
+.index-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .pii-container {
