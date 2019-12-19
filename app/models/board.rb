@@ -14,6 +14,7 @@
 class Board < ApplicationRecord
   validates :board_name, presence: true
   validates :private, inclusion: { in: [true, false]}
+  # before_validation :set_defaults
 
   belongs_to :creator, 
     primary_key: :id, 
@@ -27,5 +28,9 @@ class Board < ApplicationRecord
 
   # has_many :pins, 
   #   through: :board_pins
+
+  # def set_defaults
+  #   self.private ||= false
+  # end
 
 end

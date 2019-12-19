@@ -1,0 +1,113 @@
+.pin-show-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: -.4px;
+  /* cursor: -webkit-zoom-out; */
+  /* z-index: -1; */
+}
+
+.pin-show-arrow-container {
+  position: fixed;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.pin-show-arrow-container .fa-arrow-left {
+  color: #333333;
+  font-size: 18px;
+  padding: 14px;
+}
+
+.pin-show-arrow-container:hover {
+  background-color: #e2e2e2;
+}
+
+.pin-show-box-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin-show-box {
+  width: 1018px;
+  background-color: white;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  min-height: 300px;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px 0px;
+  border-radius: 32px;
+
+}
+
+.pin-show-grid {
+  display: grid;
+  grid-template-columns: 508px 468px;
+  grid-gap: 40px;
+  height: auto;
+}
+
+.pin-show-image {
+  /* background-color: red; */
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  border-radius: 32px 0 0 32px;
+}
+
+.pin-show-left {
+  /* background-color: rgba(0, 0, 255, 0.1); */
+  grid-row: 1;
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 60px 1fr 90px;
+  grid-gap: 20px;
+}
+
+.pin-show-left-top {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.pin-show-select-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 166px;
+  height: 40px;
+  letter-spacing: -0.4px;
+  background-color: #efefef;
+  border-radius: 12px 0px 0px 12px;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: start;
+  color: #8e8e8e;
+  border: none;
+  padding-left: 8px;
+}
+
+.pin-show-save-button {
+  cursor: pointer;
+  width: 65px;
+  height: 40px;
+  background-color: #9100df;
+  border-radius: 0px 12px 12px 0px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.pin-show-title {
+  letter-spacing: -.4px;
+  color: #333333;
+  font-size: 36px;
+  padding: 25px 0px 15px 0px;
+}

@@ -13,7 +13,13 @@ class Api::PinsController < ApplicationController
   def create
     # @pin = Pin.new(pin_params)
     @pin = current_user.created_pins.new(pin_params)
+    if params[:pin][:copiedPinId]
+      copiedPin = Pin.find(params[:pin][:copiedPinId])
+      image1 = copiedPin.image 
+      @pin.image.attach(image1.blob)
+    end
     
+    # debugger
     if @pin.save
       render "api/pins/show"
     else

@@ -37,7 +37,7 @@
 }
 
 .create-pin-button:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgb(238, 238, 238);
 }
 
 .fa-plus {

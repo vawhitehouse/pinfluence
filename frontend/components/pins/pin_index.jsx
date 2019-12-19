@@ -1,18 +1,30 @@
 import React from 'react';
 import PinIndexItem from './pin_index_item';
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class PinIndex extends React.Component {
   constructor(props) {
     super(props);
+
+    this.loadedImageCount = 0;
+    this.totalNumImages = this.props.pins.length;
+    this.incrementImageCount = this.incrementImageCount.bind(this);
+    this.resizeAllGridItems = this.resizeAllGridItems.bind(this);
   }
 
-  
-
   componentDidMount() {
-    window.onload = this.resizeAllGridItems();
-    window.addEventListener("resize", this.resizeAllGridItems);
     this.props.fetchAllPins();
+  }
+
+  componentDidUpdate() {
+    if (this.loadedImageCount === this.totalNumImages) {
+      window.onload = this.resizeAllGridItems();
+      window.addEventListener("resize", this.resizeAllGridItems);
+    }
+  }
+
+  incrementImageCount() {
+    this.loadedImageCount += 1;
   }
 
   resizeGridItem(gridItem) {
@@ -34,13 +46,11 @@ class PinIndex extends React.Component {
 
 
   render() {
-    const { pins } = this.props;
+    
+    const { pins, openModal } = this.props;
     const allPins = pins.map(pin => (
-      <PinIndexItem pin={pin} key={pin.id} />
+      <PinIndexItem pin={pin} key={pin.id} openModal={openModal} incrementImageCount={this.incrementImageCount} />
     ))
-
-    // window.onload = this.resizeAllGridItems();
-    // window.addEventListener("resize", this.resizeAllGridItems);
 
     return ( 
       

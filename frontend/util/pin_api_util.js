@@ -5,15 +5,17 @@ export const fetchAllPins = () => (
   })
 );
 
-export const fetchPin = (pinId) => (
+export const fetchPin = (pinId) => {
+  
+  return (
   $.ajax({
     method: 'GET',
     url: `/api/pins/${pinId}`
   })
-);
+)};
 
 export const createPin = (pin) => {
-  
+  // debugger
   return (
   $.ajax({
     method: 'POST',
@@ -23,6 +25,16 @@ export const createPin = (pin) => {
     processData: false
   }))
 };
+
+export const savePin = (pin) => {
+  return (
+    $.ajax({
+      method: 'POST',
+      url: '/api/pins',
+      data: pin 
+    })
+  )
+}
 
 export const updatePin = (pin) => (
   $.ajax({
