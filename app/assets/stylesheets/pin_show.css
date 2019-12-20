@@ -71,9 +71,32 @@
 
 .pin-show-left-top {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 20px;
   padding-right: 20px;
+}
+
+.pin-show-edit-button {
+  position: fixed;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pin-show-edit-button:hover {
+  background-color: #e2e2e2;
+}
+
+.fa-pencil-alt {
+  color: #333333;
+  font-size: 18px;
+  padding: 14px;
+}
+
+.pin-show-select-save-container {
+  display: flex;
+  align-items: center;
 }
 
 .pin-show-select-button {

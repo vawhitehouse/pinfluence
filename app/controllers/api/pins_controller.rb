@@ -19,7 +19,7 @@ class Api::PinsController < ApplicationController
       @pin.image.attach(image1.blob)
     end
     
-    # debugger
+    #  
     if @pin.save
       render "api/pins/show"
     else

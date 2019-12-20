@@ -1,7 +1,7 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
-import PinShowContainer from '../pins/pin_show_container';
+import EditPinFormContainer from '../pins/edit_pin_form_container';
 
 
 
@@ -12,7 +12,7 @@ function Modal({ modal, closeModal }) {
   let component;
   switch (modal) {
     case 'show':
-      component = <PinShowContainer />;
+      component = <EditPinFormContainer />;
       break;
     default:
       return null;

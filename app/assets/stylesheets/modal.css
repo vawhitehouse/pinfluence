@@ -15,6 +15,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 8px;
-  background-color: #ffffff;
+  background: rgba(0, 0, 0, 0.7);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
 }

@@ -12,7 +12,8 @@ class CreatePinForm extends React.Component {
       imageFile: null,
       imageUrl: null,
       errors: this.props.errors,
-      redirectToShow: false
+      redirectToShow: false,
+      redirectId: null
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,12 +35,15 @@ class CreatePinForm extends React.Component {
     if (this.state.imageFile) {
       formData.append('pin[image]', this.state.imageFile);
     }
-
+    
     this.props.createPin(formData)
       .then(
-        this.setState({ redirectToShow: true }), 
-        (err) => {
-          this.setState({ errors: this.renderErrors() })
+        response => { 
+           
+          this.setState({ redirectToShow: true, redirectId: response.pin.id }), 
+          (err) => {
+            this.setState({ errors: this.renderErrors() })
+          }
         } 
       );
   }
@@ -76,14 +80,14 @@ class CreatePinForm extends React.Component {
     const imagePreview = this.state.imageUrl ? <img src={this.state.imageUrl} /> : null;
 
     if (this.state.redirectToShow) {
+       
       return (
-        <Redirect to="/"/>
+        <Redirect to={`/pins/${this.state.redirectId}`}/>
       )
     }
 
     const displayNone = imagePreview ? 'display-none' : '';
     const display = !imagePreview ? 'display-none' : '';
-    
 
     return (
       <div className="create-pin-container">
@@ -133,7 +137,7 @@ class CreatePinForm extends React.Component {
               </div>
 
               <div className="grid-3-1">
-                <div className="create-pin-save-site-button" id={displayNone}>Save from site</div>
+                {/* <div className="create-pin-save-site-button" id={displayNone}>Save from site</div> */}
               </div>
               
               <div className="grid-3-2">

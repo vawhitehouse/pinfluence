@@ -10,17 +10,7 @@ class PinShow extends React.Component {
     this.redirectToIndex = this.redirectToIndex.bind(this);
     this.handleSave = this.handleSave.bind(this)
 
-    this.currentPin = {
-      pin: {
-        title: this.props.pin.title,
-        link: this.props.pin.link,
-        description: this.props.pin.description,
-        copiedPinId: this.props.pin.id,
-        // remove after board 
-        board_id: 1
-
-      }
-    }
+    this.currentPin;
     
   }
   componentDidMount() {
@@ -39,8 +29,17 @@ class PinShow extends React.Component {
 
   render () {
     if (!this.props.pin) return null;
-    
-    
+
+    this.currentPin = {
+      pin: {
+        title: this.props.pin.title,
+        link: this.props.pin.link,
+        description: this.props.pin.description,
+        copiedPinId: this.props.pin.id,
+        // remove after board 
+        board_id: 1
+      }
+    }
 
     if (this.state.redirectToIndex) {
       return (
@@ -62,8 +61,18 @@ class PinShow extends React.Component {
               <img src={this.props.pin.imageUrl} alt={this.props.pin.title} className="pin-show-image" />
               <div className="pin-show-left">
                 <div className="pin-show-left-top">
-                  <div className="pin-show-select-button">Select</div>
-                  <button onClick={this.handleSave} className="pin-show-save-button">Save</button>
+                  <div>
+                    <Link to={`/pins/${this.props.pin.id}/edit`}>
+                    <div className="pin-show-edit-button">
+                      {/* ^onClick={() => this.props.openModal(this.props.pin.id)} */}
+                      <i className="fas fa-pencil-alt"></i>
+                    </div>
+                    </Link>
+                  </div>
+                  <div className="pin-show-select-save-container">
+                    <div className="pin-show-select-button">Select</div>
+                    <button onClick={this.handleSave} className="pin-show-save-button">Save</button>
+                  </div>
                 </div>
                 <div className="pin-show-left-middle">
                   <a className="pin-show-link">

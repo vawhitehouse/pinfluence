@@ -8,6 +8,7 @@ import CreatePinFormContainer from "./pins/create_pin_form_container";
 import PinIndexContainer from "./pins/pin_index_container";
 import Modal from './modal/modal';
 import PinShowContainer from "./pins/pin_show_container";
+import EditPinFormContainer from "./pins/edit_pin_form_container";
 
 const App = () => (
   <div>
@@ -22,8 +23,10 @@ const App = () => (
       <ProtectedRoute exact path="/create-pin" component={CreatePinFormContainer} />
       <ProtectedRoute exact path="/" component={PinIndexContainer} />
       <ProtectedRoute exact path="/pins/:pinId" component={PinShowContainer} />
+      <ProtectedRoute exact path="/pins/:pinId/edit" component={EditPinFormContainer} />
+      
 
-      {/* <Modal /> */}
+      <Modal />
     </main>
   </div>
 );

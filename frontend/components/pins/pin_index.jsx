@@ -17,10 +17,7 @@ class PinIndex extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.loadedImageCount === this.totalNumImages) {
-      window.onload = this.resizeAllGridItems();
-      window.addEventListener("resize", this.resizeAllGridItems);
-    }
+    this.resizeAllGridItems();
   }
 
   incrementImageCount() {
@@ -46,6 +43,7 @@ class PinIndex extends React.Component {
 
 
   render() {
+    
     
     const { pins, openModal } = this.props;
     const allPins = pins.map(pin => (

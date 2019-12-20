@@ -21,7 +21,7 @@ const removePin = (pinId )=> ({
 });
 
 const receiveErrors = errors => {
-  // debugger
+   
   return ({
   type: RECEIVE_PIN_ERRORS,
   errors
@@ -44,7 +44,7 @@ export const fetchPin = pinId => dispatch => (
 );
 
 export const createPin = pin => dispatch => {
-  // debugger
+   
   return (
   PinApiUtil.createPin(pin).then(pin => (
     dispatch(receivePin(pin))
@@ -54,7 +54,7 @@ export const createPin = pin => dispatch => {
 )};
 
 export const savePin = pin => dispatch => {
-  // debugger
+   
   return (
     PinApiUtil.savePin(pin).then(pin => (
       dispatch(receivePin(pin))

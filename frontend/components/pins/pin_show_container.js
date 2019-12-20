@@ -15,8 +15,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     fetchPin: (pinId) => dispatch(fetchPin(pinId)),
     savePin: (pin) => dispatch(savePin(pin)),
-    // openModal: () => dispatch(openModal('show')),
-    // closeMOdal: () => dispatch(closeModal())
+    openModal: (pinId) => dispatch(openModal(pinId)),
+    closeMOdal: () => dispatch(closeModal())
   }
 }
 
