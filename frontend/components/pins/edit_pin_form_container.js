@@ -5,10 +5,12 @@ import { fetchPin, updatePin, deletePin } from '../../actions/pin_actions';
 import { closeModal } from '../../actions/modal_actions'
 
 const mapStateToProps = (state, ownProps) => {
-   
+  // debugger
   return ({
-  pin: state.entities.pins[ownProps.match.params.pinId]
-})};
+    pin: state.entities.pins[ownProps.match.params.pinId],
+    pinId: ownProps.match.params.pinId
+  })
+};
 
 const mapDispatchToProps = dispatch => ({
   fetchPin: pinId => dispatch(fetchPin(pinId)),

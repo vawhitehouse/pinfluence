@@ -64,13 +64,15 @@ export const savePin = pin => dispatch => {
   )
 };
 
-export const updatePin = pin => dispatch => (
+export const updatePin = pin => dispatch => {
+  // debugger
+  return (
   PinApiUtil.updatePin(pin).then(pin => (
     dispatch(receivePin(pin))
   ), err => (
     dispatch(receiveErrors(err.responseJSON))
   ))
-);
+)};
 
 export const deletePin = pinId => dispatch => (
   PinApiUtil.deletePin(pinId).then(() => (

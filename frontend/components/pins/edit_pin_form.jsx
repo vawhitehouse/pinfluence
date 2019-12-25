@@ -5,7 +5,11 @@ class EditPinForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pin: {title: ''},
+      title: '',
+      description: '',
+      id: '',
+      imageUrl: '',
+      link: '',
       redirectToShow: false,
       redirectToIndex: false
     };
@@ -15,17 +19,56 @@ class EditPinForm extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchPin(this.props.match.params.pinId)
-    this.updateState;
+    // debugger
+    this.props.fetchPin(this.props.pinId)
+      .then(this.setState({
+        title: this.props.pin.title,
+        description: this.props.pin.description,
+        id: this.props.pin.id,
+        imageUrl: this.props.pin.imageUrl,
+        link: this.props.pin.link,
+      }))
+    
+  }
+
+  componentDidUpdate(prevProps) {
+    // const { pin } = this.props
+    // if (!prevProps.pin && pin) {
+    //   this.setState({ pin })
+    // } 
+    
+    // if (this.state.title === '') {
+    //   debugger
+    //   // this.state undefined??
+    //   this.setState({
+    //     title: this.props.pin.title,
+    //     description: this.props.pin.description,
+    //     id: this.props.pin.id,
+    //     imageUrl: this.props.pin.imageUrl,
+    //     link: this.props.pin.link,
+    //   });
+    // }
   }
 
   update(field) {
-    return e => this.setState({ pin: { [field]: e.currentTarget.value } })
-  }
+    // debugger
+    return e => this.setState({ [field]: e.currentTarget.value });
+   
+  //   return e => {
+  //     e.persist()
+  //     this.setState(prevState => ({ 
+  //     pin: { 
+  //       ...prevState.pin,
+  //       [field]: e.target.value 
+  //     } 
+  //   }))
+  // }
+}
 
   handleSubmit(e) {
+    // debugger
     e.preventDefault();
-    this.props.updatePin(this.state.pin)
+    this.props.updatePin(this.state)
       .then(this.setState({ redirectToShow: true }));
   }
 
@@ -35,22 +78,28 @@ class EditPinForm extends React.Component {
   }
 
   redirectToShow(e) {
+    // debugger
     e.preventDefault();
     this.setState({ redirectToShow: true });
-  }
-
-  updateState() {
-    this.setState({ pin: this.props.pin})
   }
 
   render() {
     if (!this.props.pin) return null;
 
-    if (this.state.pin.title === '') {
-      this.setState({ pin: this.props.pin })
-    }
+    // if (this.state.title === '') {
+    //   debugger
+    //   // debugger hits here and this.props.pin is defined but setState doesn't happen
+    //   this.setState({ 
+    //     title: this.props.pin.title,
+    //     description: this.props.pin.description,
+    //     id: this.props.pin.id,
+    //     imageUrl: this.props.pin.imageUrl,
+    //     link: this.props.pin.link,
+    //    });
+    // }
 
     if (this.state.redirectToShow) {
+      // debugger
       return (
         <Redirect to={`/pins/${this.props.pin.id}`} />
       )
@@ -74,14 +123,14 @@ class EditPinForm extends React.Component {
             <form onSubmit={this.handleSubmit} className="edit-pin-form">
               <div className="edit-form-mid-grid">
                 <div className="edit-pin-image-container">
-                  <img src={this.props.pin.imageUrl} alt={this.state.pin.title} className="edit-pin-image" />
+                  <img src={this.props.pin.imageUrl} alt={this.state.title} className="edit-pin-image" />
                 </div>
                 <div className="edit-pin-inputs-container">
                   <div className="edit-pin-title-container">
-                    <input type="text" className="edit-pin-title-input" value={this.state.pin.title} placeholder="Title" onChange={this.update('title')}/>
+                    <input type="text" className="edit-pin-title-input" value={this.state.title || ''} placeholder="Title" onChange={this.update('title')}/>
                   </div>
                   <div className="edit-pin-description-container">
-                    <textarea className="edit-pin-description-input" value={this.state.pin.description} placeholder="Description" onChange={this.update('description')}/>
+                    <textarea className="edit-pin-description-input" value={this.state.description || ''} placeholder="Description" onChange={this.update('description')}/>
                   </div>
                   </div>
               </div>

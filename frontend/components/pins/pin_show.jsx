@@ -46,6 +46,11 @@ class PinShow extends React.Component {
         <Redirect to="/" />
       )
     }
+
+    // const allBoards = this.props.boards.map(board => {
+    //   return (
+    //   <option value={board.boardName}>{board.boardName}</option>
+    // )});
     
     return (
       <div className="pin-show-container" >
@@ -71,6 +76,9 @@ class PinShow extends React.Component {
                   </div>
                   <div className="pin-show-select-save-container">
                     <div className="pin-show-select-button">Select</div>
+                    {/* <select name="boards" id="">
+                      {allBoards}
+                    </select> */}
                     <button onClick={this.handleSave} className="pin-show-save-button">Save</button>
                   </div>
                 </div>

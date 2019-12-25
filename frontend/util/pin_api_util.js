@@ -37,7 +37,7 @@ export const savePin = (pin) => {
 }
 
 export const updatePin = (pin) => {
-   
+  //  debugger
   return (
   $.ajax({
     method: 'PATCH',

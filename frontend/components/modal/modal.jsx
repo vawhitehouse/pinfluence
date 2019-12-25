@@ -2,6 +2,7 @@ import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import EditPinFormContainer from '../pins/edit_pin_form_container';
+import CreateBoardFormContainer from '../boards/create_board_form_container';
 
 
 
@@ -14,6 +15,8 @@ function Modal({ modal, closeModal }) {
     case 'show':
       component = <EditPinFormContainer />;
       break;
+    case 'createBoard':
+      component = <CreateBoardFormContainer />
     default:
       return null;
   }

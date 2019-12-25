@@ -5,9 +5,10 @@ import { openModal, closeModal } from '../../actions/modal_actions';
 import PinShow from './pin_show';
 
 const mapStateToProps = (state, ownProps) => {
-   
+   debugger
   return {
-    pin: state.entities.pins[ownProps.match.params.pinId]
+    pin: state.entities.pins[ownProps.match.params.pinId],
+    boards: state.entities.boards
   };
 };
 

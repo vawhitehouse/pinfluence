@@ -5,6 +5,7 @@ import LoginFormContainer from "./session/login_form_container";
 import NavBarContainer from './nav_bar/nav_bar_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 import CreatePinFormContainer from "./pins/create_pin_form_container";
+import CreateBoardFormContainer from "./boards/create_board_form_container";
 import PinIndexContainer from "./pins/pin_index_container";
 import Modal from './modal/modal';
 import PinShowContainer from "./pins/pin_show_container";
@@ -21,6 +22,7 @@ const App = () => (
       <AuthRoute exact path='/login' component={LoginFormContainer} />
 
       <ProtectedRoute exact path="/create-pin" component={CreatePinFormContainer} />
+      <ProtectedRoute exact path="/create-board" component={CreateBoardFormContainer} />
       <ProtectedRoute exact path="/" component={PinIndexContainer} />
       <ProtectedRoute exact path="/pins/:pinId" component={PinShowContainer} />
       <ProtectedRoute exact path="/pins/:pinId/edit" component={EditPinFormContainer} />
