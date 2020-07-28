@@ -11,6 +11,7 @@ class SignupForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   handleSubmit(e) {
@@ -19,6 +20,11 @@ class SignupForm extends React.Component {
       .then(null, (err) => {
         this.setState({ errors: this.renderErrors() })
       });
+  }
+
+  demoLogin(e) {
+    e.preventDefault();
+    this.props.login({ email: 'demoUser@demo.com', password: 'password' })
   }
 
   update(field) {
@@ -111,6 +117,7 @@ class SignupForm extends React.Component {
               <input className={`session-form-input ${ageOutline}`} type="text" placeholder="Age" value={this.state.age} onChange={this.update('age')}/>
               <span className="error" >{this.ageErrors()}</span>
               <input className="session-form-submit" type="submit" value="Continue" />
+              <button onClick={this.demoLogin} className="demo-login-button">Demo Log in</button>
 
               <p>By continuing, you agree to Pinfluence's <a>Terms of Service</a>, <a>Privacy Policy</a></p>
               
