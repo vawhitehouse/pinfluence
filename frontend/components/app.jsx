@@ -22,6 +22,7 @@ const App = () => (
       <AuthRoute exact path='/login' component={LoginFormContainer} />
 
       <ProtectedRoute exact path="/create-pin" component={CreatePinFormContainer} />
+      {/* create-board will be modal */}
       <ProtectedRoute exact path="/create-board" component={CreateBoardFormContainer} />
       <ProtectedRoute exact path="/" component={PinIndexContainer} />
       <ProtectedRoute exact path="/pins/:pinId" component={PinShowContainer} />

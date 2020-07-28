@@ -65,7 +65,6 @@ export const savePin = pin => dispatch => {
 };
 
 export const updatePin = pin => dispatch => {
-  // debugger
   return (
   PinApiUtil.updatePin(pin).then(pin => (
     dispatch(receivePin(pin))

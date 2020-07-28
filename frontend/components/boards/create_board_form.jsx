@@ -5,8 +5,8 @@ class CreateBoardForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      boardName: '',
-      private: false,
+      board_name: '',
+      private: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -37,8 +37,8 @@ class CreateBoardForm extends React.Component {
               <h6 className="create-board-input-title">Name</h6>
               <input type="text" 
                 placeholder={`Like "Places to Go" or "Recipes to Make`}
-                value={this.props.boardName}
-                onChange={this.update('boardName')}
+                value={this.props.board_name}
+                onChange={this.update('board_name')}
               />
             </div>
 

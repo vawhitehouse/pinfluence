@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { fetchAllPins, updatePin, deletePin } from '../../actions/pin_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import PinIndex from './pin_index';
@@ -11,8 +12,8 @@ const mapDispatchToProps = dispatch => ({
   fetchAllPins: pins => dispatch(fetchAllPins(pins)),
   updatePin: pin => dispatch(updatePin(pin)),
   deletePin: pinId => dispatch(deletePin(pinId)),
-  openModal: () => dispatch(openModal('show')),
+  openModal: () => dispatch(openModal('editPin')),
   closeMOdal: () => dispatch(closeModal())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(PinIndex);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PinIndex));

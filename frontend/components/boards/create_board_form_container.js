@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { createBoard } from '../../actions/board_actions';
 import CreateBoardFrom from './create_board_form';
 import { openModal, closeModal } from '../../actions/modal_actions';
@@ -14,4 +15,4 @@ const mapDispatchToProps = dispatch => ({
   closeMOdal: () => dispatch(closeModal())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CreateBoardFrom);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CreateBoardFrom));
