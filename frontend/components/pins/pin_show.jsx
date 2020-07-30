@@ -10,7 +10,7 @@ class PinShow extends React.Component {
     
     this.redirectToIndex = this.redirectToIndex.bind(this);
     this.handleSave = this.handleSave.bind(this);
-    this.getBoards = this.getBoards.bind(this);
+    // this.getBoards = this.getBoards.bind(this);
     this.currentPin;
     
   }
@@ -30,18 +30,18 @@ class PinShow extends React.Component {
       .then(this.redirectToIndex())
   }
 
-  getBoards() {
-    console.log(this.props.boards)
-    debugger
-    this.props.boards.map(board => (
-        <option value={board.board_name} key={board.id}>{board.board_name}</option>
-      )
-    );
-  }
+  // getBoards() {
+  //   console.log(this.props.boards)
+  //   debugger
+  //   this.props.boards.map(board => (
+  //       <option value={board.board_name} key={board.id}>{board.board_name}</option>
+  //     )
+  //   );
+  // }
 
   render () {
     if (!this.props.pin) return null;
-    if (!this.props.boards) return null;
+    // if (!this.props.boards) return null;
 
     this.currentPin = {
       pin: {
@@ -84,13 +84,13 @@ class PinShow extends React.Component {
                   </div>
                   <div className="pin-show-select-save-container">
                     <div className="pin-show-select-button">Select</div>
-                    <select name="boards">
+                    {/* <select name="boards">
                       <option value="" selected disabled hidden>Select</option>
                       <option value="board1">board1</option>
                       <option value="board2">board2</option>
                       <option value="board3">board3</option>
                       {this.getBoards()}
-                    </select>
+                    </select> */}
                     <button onClick={this.handleSave} className="pin-show-save-button">Save</button>
                   </div>
                 </div>

@@ -77,7 +77,7 @@
 }
 
 .pin-show-edit-button {
-  position: fixed;
+  position: absolute;
   height: 44px;
   width: 44px;
   border-radius: 50%;
