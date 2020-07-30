@@ -11,6 +11,7 @@ class Api::PinsController < ApplicationController
   end
 
   def create
+    debugger
     # @pin = Pin.new(pin_params)
     @pin = current_user.created_pins.new(pin_params)
     if params[:pin][:copiedPinId]
@@ -23,6 +24,7 @@ class Api::PinsController < ApplicationController
     if @pin.save
       render "api/pins/show"
     else
+      debugger
       render json: @pin.errors.full_messages, status: 422
     end
   end

@@ -35,7 +35,7 @@ class CreatePinForm extends React.Component {
     if (this.state.imageFile) {
       formData.append('pin[image]', this.state.imageFile);
     }
-    
+    debugger
     this.props.createPin(formData)
       .then(
         response => { 
