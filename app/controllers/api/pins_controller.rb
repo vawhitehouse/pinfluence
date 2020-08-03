@@ -38,6 +38,16 @@ class Api::PinsController < ApplicationController
     end
   end
 
+  def update
+    debugger
+    @pin = Pin.find(params[:id])
+    if @pin.update(pin_params)
+      render "api/pins/show"
+    else
+      render json: @pin.errors.full_messages, status: 422
+    end
+  end
+
   def destroy
     pin = current_user.created_pins.find(params[:id])
     pin.destroy

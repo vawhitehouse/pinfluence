@@ -21,7 +21,6 @@ const removePin = (pinId )=> ({
 });
 
 const receiveErrors = errors => {
-   
   return ({
   type: RECEIVE_PIN_ERRORS,
   errors
@@ -65,12 +64,11 @@ export const savePin = pin => dispatch => {
 };
 
 export const updatePin = pin => dispatch => {
-  return (
-  PinApiUtil.updatePin(pin).then(pin => (
-    dispatch(receivePin(pin))
-  ), err => (
-    dispatch(receiveErrors(err.responseJSON))
-  ))
+  return PinApiUtil.updatePin(pin).then(pin => {
+      return dispatch(receivePin(pin))
+  }, err => {
+      return dispatch(receiveErrors(err.responseJSON))
+  }
 )};
 
 export const deletePin = pinId => dispatch => (

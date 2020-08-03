@@ -5,6 +5,7 @@ const pinErrorsReducer = (state = [], action) => {
  
   switch (action.type) {
     case RECEIVE_PIN_ERRORS:
+      debugger
       return action.errors;
     case RECEIVE_PIN:
       return [];

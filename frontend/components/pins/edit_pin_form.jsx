@@ -85,7 +85,7 @@ class EditPinForm extends React.Component {
 
   render() {
     if (!this.props.pin) return null;
-
+    // debugger
     // if (this.state.title === '') {
     //   debugger
     //   // debugger hits here and this.props.pin is defined but setState doesn't happen
