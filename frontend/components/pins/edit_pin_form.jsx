@@ -19,7 +19,6 @@ class EditPinForm extends React.Component {
   }
 
   componentDidMount() {
-    // debugger
     this.props.fetchPin(this.props.pinId)
       .then(this.setState({
         title: this.props.pin.title,
@@ -51,7 +50,6 @@ class EditPinForm extends React.Component {
   }
 
   update(field) {
-    // debugger
     return e => this.setState({ [field]: e.currentTarget.value });
    
   //   return e => {
@@ -66,7 +64,6 @@ class EditPinForm extends React.Component {
 }
 
   handleSubmit(e) {
-    // debugger
     e.preventDefault();
     this.props.updatePin(this.state)
       .then(this.setState({ redirectToShow: true }));
@@ -78,7 +75,6 @@ class EditPinForm extends React.Component {
   }
 
   redirectToShow(e) {
-    // debugger
     e.preventDefault();
     this.setState({ redirectToShow: true });
   }
@@ -99,7 +95,6 @@ class EditPinForm extends React.Component {
     // }
 
     if (this.state.redirectToShow) {
-      // debugger
       return (
         <Redirect to={`/pins/${this.props.pin.id}`} />
       )
