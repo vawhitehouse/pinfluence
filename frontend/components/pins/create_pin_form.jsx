@@ -35,16 +35,15 @@ class CreatePinForm extends React.Component {
     if (this.state.imageFile) {
       formData.append('pin[image]', this.state.imageFile);
     }
+    
     this.props.createPin(formData)
-      .then(
-        response => { 
-           
-          this.setState({ redirectToShow: true, redirectId: response.pin.id }), 
-          (err) => {
-            this.setState({ errors: this.renderErrors() })
-          }
-        } 
-      );
+      .then(response => { 
+        this.setState({ redirectToShow: true, redirectId: response.pin.id }), 
+        (err) => {
+          this.setState({ errors: this.renderErrors() })
+        }
+      } 
+    );
   }
 
   handleFile(e) {
