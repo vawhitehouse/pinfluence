@@ -87,9 +87,7 @@ a {
   margin: 5px;
   padding: 5px;
   height: 40px;
-  /* width: 55px; */
   border-radius: 50%;
-  
 }
 
 .inbox, .notifications {
@@ -115,9 +113,12 @@ a {
   border-radius: 30px;
   white-space: nowrap;
   margin-right: 20px;
-  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px;
+  cursor: pointer;
 }
 
 .nav-bar-logout-button:hover {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 1s ease-out;
 }
