@@ -2,3 +2,5 @@ node_modules/
 bundle.js
 bundle.js.map
 tmp/
+package-lock.json
+Gemfile.lock

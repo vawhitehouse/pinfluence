@@ -14,14 +14,13 @@ export const fetchBoard = (boardId) => (
   })
 );
 
-export const createBoard = (board) => {
-  return (
+export const createBoard = (board) => (
   $.ajax({
     method: 'POST',
     url: '/api/boards',
     data: { board }
   })
-)};
+);
 
 export const updateBoard = (board) => (
   $.ajax({
