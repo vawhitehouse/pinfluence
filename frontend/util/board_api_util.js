@@ -5,6 +5,13 @@ export const fetchBoard = (boardId) => (
   })
 );
 
+export const fetchAllBoards = () => {
+  $.ajax({
+    method: 'GET',
+    url: `/api/boards`
+  })
+}
+
 export const createBoard = (board) => (
   $.ajax({
     methos: 'POST',
