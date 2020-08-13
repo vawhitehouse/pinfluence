@@ -1,3 +1,12 @@
+export const fetchAllBoards = () => {
+  
+  return (
+  $.ajax({
+    method: 'GET',
+    url: '/api/boards'
+  })
+)};
+
 export const fetchBoard = (boardId) => (
   $.ajax({
     method: 'GET',
@@ -14,11 +23,11 @@ export const fetchAllBoards = () => {
 
 export const createBoard = (board) => (
   $.ajax({
-    methos: 'POST',
+    method: 'POST',
     url: '/api/boards',
     data: { board }
   })
-);
+)};
 
 export const updateBoard = (board) => (
   $.ajax({
@@ -33,4 +42,4 @@ export const deleteBoard = (boardId) => (
     method: 'DELETE',
     url: `/api/boards/${boardId}`
   })
-)
+);

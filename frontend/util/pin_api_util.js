@@ -5,28 +5,45 @@ export const fetchAllPins = () => (
   })
 );
 
-export const fetchPin = (pinId) => (
+export const fetchPin = (pinId) => {
+  
+  return (
   $.ajax({
     method: 'GET',
     url: `/api/pins/${pinId}`
   })
-);
+)};
 
-export const createPin = (pin) => (
+export const createPin = (pin) => {
+   
+  return (
   $.ajax({
-    methos: 'POST',
+    method: 'POST',
     url: '/api/pins',
-    data: { pin }
-  })
-);
+    data: pin,
+    contentType: false,
+    processData: false
+  }))
+};
 
-export const updatePin = (pin) => (
+export const savePin = (pin) => {
+  return (
+    $.ajax({
+      method: 'POST',
+      url: '/api/pins',
+      data: pin 
+    })
+  )
+}
+
+export const updatePin = (pin) => {
+  return (
   $.ajax({
     method: 'PATCH',
-    url: `/api/pins/${pin.id}/edit`,
+    url: `/api/pins/${pin.id}`,
     data: { pin }
   })
-);
+)};
 
 export const deletePin = (pinId) => (
   $.ajax({
