@@ -1,0 +1,139 @@
+.edit-pin-container {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #efefef;
+}
+
+.edit-pin-form-box-container {
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-pin-form-box {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px 60px;
+  min-height: 300px;
+  width: 880px;
+  display: grid;
+  grid-template-rows: 70px 1fr;
+}
+
+/* .edit-pin-header {
+  box-shadow: rgba(223, 222, 222, 0.5) 0px 1px 0px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px
+} */
+
+.edit-pin-header {
+  grid-row: 1;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
+
+  width: 100%;
+}
+
+.edit-pin-form {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 1fr 70px;
+}
+
+.edit-form-mid-grid {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.edit-pin-image {
+  grid-column: 2;
+  max-width: 240px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.edit-pin-inputs-container {
+  grid-column: 1;
+  grid-row: 1;
+  /* grid-template-rows: 100px 100px 1fr;  */
+}
+
+.edit-pin-title-input {
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 36px;
+  color: #333333;
+  letter-spacing: -.4px;
+  font-weight: 600;
+  box-shadow: rgba(142, 142, 142, 0.5) 0px 1px 0px 0px;
+  border: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3px;
+}
+
+.edit-pin-description-input {
+  outline: none;
+  resize: none;
+  font-size: 18px;
+  color: #333333;
+  caret-color: #333333;
+  letter-spacing: -.4px;
+  font-weight: 600;
+  box-shadow: rgba(142, 142, 142, 0.5) 0px 1px 0px 0px;
+  border: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+}
+
+.edit-pin-grid-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-pin-update-button {
+  cursor: pointer;
+  width: 65px;
+  height: 40px;
+  letter-spacing: -0.4px;
+  background-color: #9100df;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+
+.edit-pin-cancel-save {
+  display: flex;
+}
+
+.edit-pin-cancel {
+  margin: 0px 20px;
+}
+
+.edit-pin-delete, .edit-pin-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 75px;
+  height: 40px;
+  letter-spacing: -0.4px;
+  background-color: #efefef;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #333333;
+  border: none;
+  font-weight: 600;
+  /* padding-left: 8px; */
+}

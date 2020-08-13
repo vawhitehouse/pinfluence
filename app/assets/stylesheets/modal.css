@@ -1,0 +1,20 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 10;
+  cursor: -webkit-zoom-out;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+}

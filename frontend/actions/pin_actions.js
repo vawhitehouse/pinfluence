@@ -20,10 +20,11 @@ const removePin = (pinId )=> ({
   pinId
 });
 
-const receiveErrors = errors => ({
+const receiveErrors = errors => {
+  return ({
   type: RECEIVE_PIN_ERRORS,
   errors
-});
+})};
 
 export const fetchAllPins = () => dispatch => (
   PinApiUtil.fetchAllPins().then(pins => (
@@ -41,21 +42,32 @@ export const fetchPin = pinId => dispatch => (
   ))
 );
 
-export const createPin = pin => dispatch => (
-  PinApiUtil.createPin(pin).then(pin => (
-    dispatch(receivePin(pin))
-  ), err => (
-    dispatch(receiveErrors(err.responseJSON))
-  ))
-);
+export const createPin = pin => dispatch => {
+  return PinApiUtil.createPin(pin).then(pin => {
+    return dispatch(receivePin(pin))
+  }, err => {
+    return dispatch(receiveErrors(err.responseJSON))
+  }
+)};
 
-export const updatePin = pin => dispatch => (
-  PinApiUtil.updatePin(pin).then(pin => (
-    dispatch(receivePin(pin))
-  ), err => (
-    dispatch(receiveErrors(err.responseJSON))
-  ))
-);
+export const savePin = pin => dispatch => {
+   
+  return (
+    PinApiUtil.savePin(pin).then(pin => (
+      dispatch(receivePin(pin))
+    ), err => (
+      dispatch(receiveErrors(err.responseJSON))
+    ))
+  )
+};
+
+export const updatePin = pin => dispatch => {
+  return PinApiUtil.updatePin(pin).then(pin => {
+      return dispatch(receivePin(pin))
+  }, err => {
+      return dispatch(receiveErrors(err.responseJSON))
+  }
+)};
 
 export const deletePin = pinId => dispatch => (
   PinApiUtil.deletePin(pinId).then(() => (

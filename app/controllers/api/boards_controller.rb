@@ -1,15 +1,17 @@
 class Api::BoardsController < ApplicationController
-  # def index
-  #   @boards = Board.all 
-  # end
+  def index
+    @boards = Board.all 
+    render :index
+  end
 
   def show
     @board = Board.find(params[:id])
+    render :show
   end
 
   def create
-    @board = Board.new(board_params)
-
+    # @board = Board.new(board_params)
+    @board = current_user.created_boards.new(board_params)
     if @board.save
       render "api/boards/show"
     else
