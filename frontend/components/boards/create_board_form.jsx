@@ -24,33 +24,37 @@ class CreateBoardForm extends React.Component {
 
     return (
       <div className="create-board-container">
-        <div className="creat-board-form-box">
+        <div className="create-board-form-box">
           <form onSubmit={this.handleSubmit}>
 
             <div className="create-board-header">
-              <h4>Create Board</h4>
+              <h4>Create board</h4>
             </div>
 
-            <div className="create-board-line"></div>
+            {/* <div className="create-board-line"></div> */}
 
             <div  className="create-board-name-container">
               <h6 className="create-board-input-title">Name</h6>
-              <input type="text" 
+              <input 
+                type="text" 
+                className="create-board-name-input"
                 placeholder={`Like "Places to Go" or "Recipes to Make`}
                 value={this.props.board_name}
                 onChange={this.update('board_name')}
               />
             </div>
 
-            <div className="create-board-line"></div>
+            {/* <div className="create-board-line"></div> */}
 
             <div className="create-board-visibility-container">
               <h6 className="create-board-input-title">Visibiltiy</h6>
-              <input type="checkbox" className="create-board-visibility-checkbox" />
+              <input 
+                type="checkbox" 
+                className="create-board-visibility-checkbox" />
               <p>Keep this board secret</p>
             </div>
 
-            <div className="create-board-line"></div>
+            {/* <div className="create-board-line"></div> */}
 
             <Link to="/"><div className="create-board-cancel">Cancel</div></Link>
             <input type="submit" value="Create" className="create-board-submit" />

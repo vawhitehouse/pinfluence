@@ -1,0 +1,48 @@
+.create-board-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* remove background color once modal is set up */
+  background-color: #7e7e7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+}
+
+.create-board-form-box {
+  background-color: #FFF;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.create-board-header {
+  font-size: 28px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.create-board-name-container, 
+.create-board-visibility-container,
+.create-board-cancel,
+.create-board-submit {
+  padding: 0 32px;
+  margin-bottom: 32px;
+}
+
+.create-board-input-title {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.create-board-name-input {
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  min-height: 48px;
+  width: 100%;
+}
