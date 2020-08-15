@@ -21,7 +21,8 @@ class CreateBoardForm extends React.Component {
   }
 
   render() {
-
+    const disableClass = this.state.board_name === '' ? 'disable' : '';
+    debugger
     return (
       <div className="create-board-container">
         <div className="create-board-form-box">
@@ -34,7 +35,7 @@ class CreateBoardForm extends React.Component {
             {/* <div className="create-board-line"></div> */}
 
             <div  className="create-board-name-container">
-              <h6 className="create-board-input-title">Name</h6>
+              <h4 className="create-board-input-title">Name</h4>
               <input 
                 type="text" 
                 className="create-board-name-input"
@@ -46,18 +47,28 @@ class CreateBoardForm extends React.Component {
 
             {/* <div className="create-board-line"></div> */}
 
-            <div className="create-board-visibility-container">
-              <h6 className="create-board-input-title">Visibiltiy</h6>
-              <input 
-                type="checkbox" 
-                className="create-board-visibility-checkbox" />
-              <p>Keep this board secret</p>
+            <div className="create-board-secret-container">
+              {/* <h6 className="create-board-input-title">Visibiltiy</h6> */}
+              <div className="create-board-secret-flex">
+                <h6 className="create-board-secret">Keep this board secret</h6>
+                <label className="secret-switch">
+                  <input type="checkbox" />
+                  <span className="secret-slider"></span>
+                </label>
+              </div>
+              <p>So only you and collaborators can see it.</p>
             </div>
 
             {/* <div className="create-board-line"></div> */}
 
-            <Link to="/"><div className="create-board-cancel">Cancel</div></Link>
-            <input type="submit" value="Create" className="create-board-submit" />
+            {/* <Link to="/"><div className="create-board-cancel">Cancel</div></Link> */}
+            <div className="create-board-submit-container">
+              <input 
+                type="submit" 
+                value="Create" 
+                className={`create-board-submit ${disableClass}`} 
+                disabled={!this.state.board_name} />
+            </div>
 
           </form>
         </div>
