@@ -56,6 +56,10 @@
   outline: none;
 }
 
+.create-board-name-container p {
+  margin-top: 8px;
+}
+
 .create-board-secret {
   font-size: 20px;
   font-weight: 700;
@@ -147,3 +151,4 @@ input:checked + .secret-slider:before {
   background-color: #efefef;
   cursor: initial;
 }
+

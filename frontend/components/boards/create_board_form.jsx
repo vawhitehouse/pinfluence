@@ -6,9 +6,11 @@ class CreateBoardForm extends React.Component {
     super(props);
     this.state = {
       board_name: '',
-      private: false
+      private: false,
+      name_error: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.validate_board_name = this.validate_board_name.bind(this);
   }
 
   update(field) {
@@ -20,8 +22,17 @@ class CreateBoardForm extends React.Component {
     this.props.createBoard(this.state);
   }
 
+  validate_board_name() {
+    if (!this.state.board_name) {
+      return () => {
+        return this.setState({ name_error: "Don't forget to name your board!"})
+      }
+    }
+  }
+
   render() {
     const disableClass = this.state.board_name === '' ? 'disable' : '';
+    const errorOutline = this.state.name_error ? 'error-outline' : '';
     debugger
     return (
       <div className="create-board-container">
@@ -38,11 +49,13 @@ class CreateBoardForm extends React.Component {
               <h4 className="create-board-input-title">Name</h4>
               <input 
                 type="text" 
-                className="create-board-name-input"
+                className={`create-board-name-input ${errorOutline}`}
                 placeholder={`Like "Places to Go" or "Recipes to Make`}
                 value={this.props.board_name}
                 onChange={this.update('board_name')}
+                onBlur={this.validate_board_name()}
               />
+              <p className="error">{this.state.name_error}</p>
             </div>
 
             {/* <div className="create-board-line"></div> */}
