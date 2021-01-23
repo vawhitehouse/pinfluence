@@ -1,10 +1,12 @@
 import { connect } from 'react-redux';
 import { fetchBoard } from '../../actions/board_actions';
+import { fetchAllPins } from '../../actions/pin_actions';
 import BoardShow from './board_show';
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = ({ entities }, ownProps) => {
   return {
-    board: state.entities.boards[ownProps.match.params.boardId]
+    board: entities.boards[ownProps.match.params.boardId],
+    pins: entities.pins,
   };
 };
 

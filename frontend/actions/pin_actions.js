@@ -5,7 +5,7 @@ export const RECEIVE_PIN = 'RECEIVE_PIN';
 export const REMOVE_PIN = 'REMOVE_PIN';
 export const RECEIVE_PIN_ERRORS = 'RECEIVE_PIN_ERRORS';
 
-const receiveAllPins = (pins) => ({
+export const receiveAllPins = (pins) => ({
   type: RECEIVE_ALL_PINS,
   pins
 });
