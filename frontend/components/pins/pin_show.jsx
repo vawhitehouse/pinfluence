@@ -8,7 +8,7 @@ class PinShow extends React.Component {
       redirectToIndex: false
     }
     
-    this.redirectToIndex = this.redirectToIndex.bind(this);
+    // this.redirectToIndex = this.redirectToIndex.bind(this);
     this.handleSave = this.handleSave.bind(this);
     // this.getBoards = this.getBoards.bind(this);
     this.currentPin;
@@ -20,14 +20,15 @@ class PinShow extends React.Component {
     // this.props.fetchAllBoards();
   }
 
-  redirectToIndex() {
-    this.setState({ redirectToIndex: true })
-  }
+  // redirectToIndex() {
+  //   this.setState({ redirectToIndex: true })
+  // }
 
   handleSave(e) {
     e.preventDefault();
     this.props.savePin(this.currentPin)
-      .then(this.redirectToIndex())
+      // .then(this.redirectToIndex())
+      .then(this.props.history.push('/'))
   }
 
   // getBoards() {
@@ -54,16 +55,17 @@ class PinShow extends React.Component {
       }
     }
 
-    if (this.state.redirectToIndex) {
-      return (
-        <Redirect to="/" />
-      )
-    }
-    
+    // if (this.state.redirectToIndex) {
+    //   return (
+    //     <Redirect to="/" />
+    //   )
+    // }
+    // debugger
+
     return (
       <div className="pin-show-container" >
         {/* onClick={this.redirectToIndex} */}
-        <Link to='/'>
+        <Link to="/">
           <div className="pin-show-arrow-container">
             <i className="fas fa-arrow-left"></i>
           </div>

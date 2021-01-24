@@ -40,8 +40,9 @@ export const fetchAllBoards = () => dispatch => {
 
 export const fetchBoard = boardId => dispatch => (
   BoardApiUtil.fetchBoard(boardId).then(board => {
-    dispatch(receiveBoard(board));
     dispatch(receiveAllPins(board.pins));
+    // debugger
+    dispatch(receiveBoard(board));
     }, err => (
       dispatch(receiveErrors(err.responseJSON))
     ))

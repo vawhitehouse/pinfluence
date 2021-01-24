@@ -1,4 +1,5 @@
 import React from 'react';
+import PinIndexItem from '../pins/pin_index_item';
 
 class BoardShow extends React.Component {
   // constructor(props) {
@@ -11,10 +12,17 @@ class BoardShow extends React.Component {
 
   render() {
     if (!this.props.board) return null;
+
+    const { board, pins } = this.props;
+    
+    const pinItems = Object.values(pins).map((pin) => (
+      <PinIndexItem pin={pin} key={pin.id} />
+    ));
   
     return (
       <div className="board-show-container">
-        <h1>{this.props.board.board_name}</h1>
+        <h1>{board.board_name}</h1>
+        {pinItems}
       </div>
     );
   }

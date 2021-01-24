@@ -5,10 +5,13 @@ export const RECEIVE_PIN = 'RECEIVE_PIN';
 export const REMOVE_PIN = 'REMOVE_PIN';
 export const RECEIVE_PIN_ERRORS = 'RECEIVE_PIN_ERRORS';
 
-export const receiveAllPins = (pins) => ({
-  type: RECEIVE_ALL_PINS,
-  pins
-});
+export const receiveAllPins = (pins) => {
+  // debugger
+  return {
+    type: RECEIVE_ALL_PINS,
+    pins
+  }
+};
 
 const receivePin = (pin) => ({
   type: RECEIVE_PIN,

@@ -4,6 +4,7 @@ import { fetchAllPins } from '../../actions/pin_actions';
 import BoardShow from './board_show';
 
 const mapStateToProps = ({ entities }, ownProps) => {
+  // debugger
   return {
     board: entities.boards[ownProps.match.params.boardId],
     pins: entities.pins,

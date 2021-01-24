@@ -2,9 +2,10 @@ import { RECEIVE_ALL_PINS, RECEIVE_PIN, REMOVE_PIN } from '../actions/pin_action
 
 const PinsReducer = (state = {}, action) => {
   Object.freeze(state);
-
+  // debugger
   switch (action.type) {
     case RECEIVE_ALL_PINS:
+      // debugger 
       return Object.assign({}, state, action.pins);
     case RECEIVE_PIN:
       return Object.assign({}, state, { [action.pin.id]: action.pin });
