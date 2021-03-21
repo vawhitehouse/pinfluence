@@ -1,22 +1,15 @@
-.pin-index-container {
-  margin-top: 28px ;
+.index-container {
+ display: flex;
+ justify-content: center;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: 5px;
+.index-columns {
+  display: flex;
 }
 
-.grid-item {
-  margin: 10px;
-  width: 250px;
-} 
-
-/* .grid-item-content {
-  
-} */
+[class^="index-col"] {
+  padding: 6px;
+}
 
 .create-pin-button {
   position: fixed;
