@@ -1,7 +1,6 @@
 import React from 'react';
 import PinIndexItem from './pin_index_item';
 import { Link } from 'react-router-dom';
-import IndexGrid from '../grid/index_grid';
 
 class PinIndex extends React.Component {
   constructor(props) {
@@ -14,8 +13,7 @@ class PinIndex extends React.Component {
   }
 
   componentDidMount() {
-    if (!this.props.pins) {
-      // need to fix this, temp fix to reuse in board show
+    if (!this.props.pins || this.props.match.path === "/") {
       this.props.fetchAllPins();
     }
     this.updateDimensions();
@@ -33,7 +31,6 @@ class PinIndex extends React.Component {
       columns: Math.floor(width / 252),
     });
   }
-  
 
   render() {
     const { pins, openModal } = this.props;

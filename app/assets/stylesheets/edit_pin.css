@@ -105,7 +105,7 @@
   height: 40px;
   letter-spacing: -0.4px;
   background-color: #9100df;
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 0px;
   font-size: 16px;
   color: #ffffff;
   font-weight: 600;
@@ -136,4 +136,21 @@
   border: none;
   font-weight: 600;
   /* padding-left: 8px; */
+}
+
+.edit-pin-select-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 166px;
+  height: 40px;
+  letter-spacing: -0.4px;
+  background-color: #efefef;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: start;
+  color: #8e8e8e;
+  border: none;
+  padding-left: 8px;
 }

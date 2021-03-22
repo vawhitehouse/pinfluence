@@ -5,7 +5,7 @@ class CreatePinForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      board_id: 1, // remove after creating boards
+      board_id: '', 
       title: '',
       description: '',
       link: '',
@@ -18,6 +18,11 @@ class CreatePinForm extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFile = this.handleFile.bind(this);
+    this.handleBoard = this.handleBoard.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchAllBoards();
   }
 
   handleSubmit(e) {
@@ -25,9 +30,7 @@ class CreatePinForm extends React.Component {
 
     const formData = new FormData();
 
-    // remove after creating boards
     formData.append('pin[board_id]', this.state.board_id);
-    // 
     formData.append('pin[title]', this.state.title);
     formData.append('pin[description]', this.state.description);
     formData.append('pin[link]', this.state.link);
@@ -58,13 +61,15 @@ class CreatePinForm extends React.Component {
     }
   }
 
+  handleBoard(e) {
+    this.setState({board_id: e.target[e.target.selectedIndex].value})
+  }
+
   update(field) {
     return e => this.setState({ [field]: e.currentTarget.value })
   }
 
   renderErrors() {
-    // let blankTitleError = [];
-
     const allErrors = this.props.errors.map((error, i) => (
       <li key={i}>{error}</li>
     ));
@@ -75,10 +80,11 @@ class CreatePinForm extends React.Component {
   }
 
   render() {
+    if (!this.props.boards) return null;
+
     const imagePreview = this.state.imageUrl ? <img src={this.state.imageUrl} /> : null;
 
     if (this.state.redirectToShow) {
-       
       return (
         <Redirect to={`/pins/${this.state.redirectId}`}/>
       )
@@ -86,6 +92,10 @@ class CreatePinForm extends React.Component {
 
     const displayNone = imagePreview ? 'display-none' : '';
     const display = !imagePreview ? 'display-none' : '';
+
+    const boardOptions = this.props.boards.map((board) => {
+      return <option value={board.id} key={board.id}>{board.board_name}</option>
+    });
 
     return (
       <div className="create-pin-container">
@@ -97,7 +107,14 @@ class CreatePinForm extends React.Component {
               {/* <div className="grid-1-1">grid-1-1</div> */}
 
               <div className="grid-1-2">
-                <div className="create-pin-select-button">Select</div>
+                <select 
+                  name="board" 
+                  defaultValue="select" 
+                  className="create-pin-select-button" 
+                  onChange={this.handleBoard}>
+                  <option value="select" disabled>Select</option>
+                  {boardOptions}
+                </select>
                 <input className="create-pin-save-button" type="submit" value="Save" />
               </div>
 
@@ -154,8 +171,6 @@ class CreatePinForm extends React.Component {
       </div>
     )
   }
-
-
 }
 
 export default CreatePinForm;
