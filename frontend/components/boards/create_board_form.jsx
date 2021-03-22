@@ -19,7 +19,7 @@ class CreateBoardForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createBoard(this.state);
+    this.props.createBoard(this.state).then((res) => {debugger;this.props.history.push(`/boards/${res.board.id}`)});
   }
 
   validate_board_name() {
@@ -33,7 +33,7 @@ class CreateBoardForm extends React.Component {
   render() {
     const disableClass = this.state.board_name === '' ? 'disable' : '';
     const errorOutline = this.state.name_error ? 'error-outline' : '';
-    debugger
+    // debugger
     return (
       <div className="create-board-container">
         <div className="create-board-form-box">

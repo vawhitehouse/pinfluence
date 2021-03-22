@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { fetchBoard } from '../../actions/board_actions';
-import { fetchAllPins } from '../../actions/pin_actions';
-import BoardShow from './board_show';
+import { openModal, closeModal } from '../../actions/modal_actions';
+ import BoardShow from './board_show';
 
 const mapStateToProps = ({ entities }, ownProps) => {
   // debugger
@@ -13,7 +13,8 @@ const mapStateToProps = ({ entities }, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchBoard: boardId => dispatch(fetchBoard(boardId))
+    fetchBoard: boardId => dispatch(fetchBoard(boardId)),
+    openModal: modal => dispatch(openModal(modal))
   };
 };
 

@@ -14,7 +14,10 @@ class PinIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchAllPins();
+    if (!this.props.pins) {
+      // need to fix this, temp fix to reuse in board show
+      this.props.fetchAllPins();
+    }
     this.updateDimensions();
     window.addEventListener('resize', this.updateDimensions);
   }
@@ -40,7 +43,7 @@ class PinIndex extends React.Component {
     if (columns > 1) {
       pins.map((pin, i) => {
         let idx = i % columns;
-        debugger 
+ 
         indexColumns[idx].push(<PinIndexItem pin={pin} key={pin.id} />)
         if (i < columns) {
           // do what's outside the if - populate 1 pin per column

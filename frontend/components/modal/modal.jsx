@@ -2,7 +2,7 @@ import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import EditPinFormContainer from '../pins/edit_pin_form_container';
+import EditBoardForm from '../boards/edit_board_form';
 import CreateBoardFormContainer from '../boards/create_board_form_container';
 
 
@@ -14,8 +14,8 @@ function Modal({ modal, closeModal }) {
 
   let component;
   switch (modal) {
-    case 'editPin':
-      component = <EditPinFormContainer />;
+    case 'editBoard':
+      component = <EditBoardForm />;
       break;
     case 'createBoard':
       component = <CreateBoardFormContainer />
