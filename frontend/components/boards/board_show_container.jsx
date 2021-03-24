@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import { fetchBoard } from '../../actions/board_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
- import BoardShow from './board_show';
+import BoardShow from './board_show';
+
 
 const mapStateToProps = ({ entities }, ownProps) => {
   // debugger

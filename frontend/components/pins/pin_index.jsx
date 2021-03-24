@@ -13,7 +13,8 @@ class PinIndex extends React.Component {
   }
 
   componentDidMount() {
-    if (!this.props.pins || this.props.match.path === "/") {
+    // this definitely needs to be refactored
+    if (!this.props.pins || (this.props.match && this.props.match.path === "/")) {
       this.props.fetchAllPins();
     }
     this.updateDimensions();
