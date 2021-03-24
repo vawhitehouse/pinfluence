@@ -5,3 +5,5 @@ tmp/
 log/
 package-lock.json
 Gemfile.lock
+# Ignore master key for decrypting credentials and more.
+/config/master.key
