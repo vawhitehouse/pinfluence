@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import BoardDropdown from '../boards/board_dropdown';
 
 class EditPinForm extends React.Component {
   constructor(props) {
@@ -68,9 +69,9 @@ class EditPinForm extends React.Component {
       )
     }
 
-    const boardOptions = this.props.boards.map((board) => {
-      return <option value={board.id} key={board.id}>{board.board_name}</option>
-    });
+    // const boardOptions = this.props.boards.map((board) => {
+    //   return <option value={board.id} key={board.id}>{board.board_name}</option>
+    // });
     
     return (
       <div className="edit-pin-container">
@@ -107,14 +108,18 @@ class EditPinForm extends React.Component {
                 <div className="edit-pin-delete" onClick={this.handleDelete}>Delete</div>
                 <div className="edit-pin-cancel-save">
                   <div className="edit-pin-cancel" onClick={this.redirectToShow}>Cancel</div>
-                  <select 
+                  {/* <select 
                     name="board" 
                     defaultValue={this.props.pin.board_id} 
                     className="edit-pin-select-button" 
                     onChange={this.update('board_id')}>
                     <option value="select" disabled>Select</option>
                     {boardOptions}
-                  </select>
+                  </select> */}
+                  <BoardDropdown 
+                    boards={this.props.boards} 
+                    boardId={this.props.pin.board_id}
+                    handleBoard={this.update('board_id')}/>
                   <input type="submit" value="Save" className="edit-pin-update-button" />
                 </div>
               </div>

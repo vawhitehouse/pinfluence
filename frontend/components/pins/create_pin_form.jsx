@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import BoardDropdown from '../boards/board_dropdown'
 
 class CreatePinForm extends React.Component {
   constructor(props) {
@@ -93,10 +94,6 @@ class CreatePinForm extends React.Component {
     const displayNone = imagePreview ? 'display-none' : '';
     const display = !imagePreview ? 'display-none' : '';
 
-    const boardOptions = this.props.boards.map((board) => {
-      return <option value={board.id} key={board.id}>{board.board_name}</option>
-    });
-
     return (
       <div className="create-pin-container">
         <div className="create-pin-form-box-container">
@@ -107,14 +104,7 @@ class CreatePinForm extends React.Component {
               {/* <div className="grid-1-1">grid-1-1</div> */}
 
               <div className="grid-1-2">
-                <select 
-                  name="board" 
-                  defaultValue="select" 
-                  className="create-pin-select-button" 
-                  onChange={this.handleBoard}>
-                  <option value="select" disabled>Select</option>
-                  {boardOptions}
-                </select>
+                <BoardDropdown boards={this.props.boards} handleBoard={this.handleBoard} />
                 <input className="create-pin-save-button" type="submit" value="Save" />
               </div>
 
