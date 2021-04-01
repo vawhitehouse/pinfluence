@@ -14,12 +14,26 @@ class CreatePinForm extends React.Component {
       imageUrl: null,
       errors: this.props.errors,
       redirectToShow: false,
-      redirectId: null
+      redirectId: null,
+      showDropdown: false,
+      dropdownText: ''
     }
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleFile = this.handleFile.bind(this);
     this.handleBoard = this.handleBoard.bind(this);
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.hideDropdown = this.hideDropdown.bind(this);
+  }
+
+  toggleDropdown() {
+    this.setState({showDropdown: !this.state.showDropdown});
+  }
+
+  hideDropdown(e) {
+    if (this.state.showDropdown) {
+      this.setState({showDropdown: !this.state.showDropdown})
+    };
   }
 
   componentDidMount() {
@@ -63,7 +77,7 @@ class CreatePinForm extends React.Component {
   }
 
   handleBoard(e) {
-    this.setState({board_id: e.target[e.target.selectedIndex].value})
+    this.setState({board_id: e.target.value, dropdownText: e.target.innerText})
   }
 
   update(field) {
@@ -93,6 +107,17 @@ class CreatePinForm extends React.Component {
 
     const displayNone = imagePreview ? 'display-none' : '';
     const display = !imagePreview ? 'display-none' : '';
+    const dropdown = this.state.showDropdown ? (
+      <BoardDropdown 
+        boards={this.props.boards} 
+        handleBoard={this.handleBoard} 
+        openModal={this.props.openModal} />
+    ) : null;
+    const dropdownText = !this.state.dropdownText ? (
+      "Select"
+      ) : (
+      this.state.dropdownText
+    );
 
     return (
       <div className="create-pin-container">
@@ -104,7 +129,14 @@ class CreatePinForm extends React.Component {
               {/* <div className="grid-1-1">grid-1-1</div> */}
 
               <div className="grid-1-2">
-                <BoardDropdown boards={this.props.boards} handleBoard={this.handleBoard} />
+                <div 
+                className="board-dropdown" 
+                onClick={this.toggleDropdown}
+                onBlur={this.hideDropdown} 
+                tabIndex={0}>
+                  <p className="dropdown-select">{dropdownText}</p>
+                  {dropdown}
+                </div>
                 <input className="create-pin-save-button" type="submit" value="Save" />
               </div>
 

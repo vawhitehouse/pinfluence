@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import { fetchAllBoards } from '../../actions/board_actions';
 import { createPin } from '../../actions/pin_actions';
 import CreatePinForm from './create_pin_form';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = ({ errors, entities }) => {
   return {
@@ -14,7 +15,8 @@ const mapStateToProps = ({ errors, entities }) => {
 const mapDispatchToProps = dispatch => {
   return {
     createPin: pin => dispatch(createPin(pin)),
-    fetchAllBoards: () => dispatch(fetchAllBoards())
+    fetchAllBoards: () => dispatch(fetchAllBoards()),
+    openModal: (modal) => dispatch(openModal(modal))
   }
 };
 

@@ -19,6 +19,7 @@ function Modal({ modal, closeModal }) {
       break;
     case 'createBoard':
       component = <CreateBoardFormContainer />
+      break;
     default:
       return null;
   }

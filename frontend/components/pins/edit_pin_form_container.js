@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import EditPinForm from './edit_pin_form';
 import { fetchPin, updatePin, deletePin } from '../../actions/pin_actions';
-import { closeModal } from '../../actions/modal_actions'
+import { openModal, closeModal } from '../../actions/modal_actions'
 import { fetchAllBoards } from '../../actions/board_actions';
 
 const mapStateToProps = (state, ownProps) => {
@@ -19,7 +19,8 @@ const mapDispatchToProps = dispatch => {
     updatePin: pin => dispatch(updatePin(pin)),
     deletePin: (pinId) => dispatch(deletePin(pinId)),
     fetchAllBoards: () => dispatch(fetchAllBoards()),
-    closeModal: () => dispatch(closeModal())
+    closeModal: () => dispatch(closeModal()),
+    openModal: (modal) => dispatch(openModal(modal))
   }
 };
 

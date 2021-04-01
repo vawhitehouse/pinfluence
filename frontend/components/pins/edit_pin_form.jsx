@@ -119,7 +119,8 @@ class EditPinForm extends React.Component {
                   <BoardDropdown 
                     boards={this.props.boards} 
                     boardId={this.props.pin.board_id}
-                    handleBoard={this.update('board_id')}/>
+                    handleBoard={this.update('board_id')}
+                    openModal={this.props.openModal} />
                   <input type="submit" value="Save" className="edit-pin-update-button" />
                 </div>
               </div>
