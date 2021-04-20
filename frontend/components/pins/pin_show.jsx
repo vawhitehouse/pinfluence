@@ -98,12 +98,6 @@ class PinShow extends React.Component {
                       tabIndex={0}>
                       <p className="dropdown-select">{dropdownText}</p>
                       {dropdown}
-                      {/* BoardDropdown below for testing only */}
-                      <BoardDropdown 
-                        boards={this.props.boards} 
-                        boardId={this.props.pin.board_id}
-                        handleBoard={this.update("board_id")}
-                        openModal={this.props.openModal} />
                     </div>
                     <button onClick={this.handleSave} className="pin-show-save-button">Save</button>
                   </div>
