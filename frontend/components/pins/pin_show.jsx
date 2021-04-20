@@ -12,23 +12,41 @@ class PinShow extends React.Component {
     this.handleSave = this.handleSave.bind(this);
     this.toggleDropdown = this.toggleDropdown.bind(this);
     this.hideDropdown = this.hideDropdown.bind(this);
-    this.currentPin;
+    this.pin;
     
   }
   componentDidMount() {
-    
-    this.props.fetchPin(this.props.match.params.pinId);
+    this.props.fetchPin(this.props.match.params.pinId).then(res => {
+      this.setState({ pin: {
+        title: res.pin.title,
+        link: res.pin.link,
+        description: res.pin.description,
+        copiedPinId: res.pin.id,
+        boardId: null
+      }})
+    });
     this.props.fetchAllBoards();
   }
 
   handleSave(e) {
     e.preventDefault();
-    this.props.savePin(this.currentPin)
-      .then(this.props.history.push('/'))
+    this.props.savePin({pin: this.state.pin})
+      .then(() => this.props.history.push('/'))
   }
 
-  update(field) {
-    return e => this.setState({ [field]: e.currentTarget.value });
+  handleBoard() {
+    return e => {
+      const dropdownText = e.target.innerText
+      const boardId = e.target.value
+      this.setState(prevState => ({ 
+        ...prevState,
+        dropdownText, 
+        pin: {
+          ...prevState.pin,
+          board_id: boardId
+        } 
+      }))
+    };
   }
 
   toggleDropdown() {
@@ -45,20 +63,19 @@ class PinShow extends React.Component {
     if (!this.props.pin) return null;
     // if (!this.props.boards) return null;
 
-    this.currentPin = {
-      pin: {
-        title: this.props.pin.title,
-        link: this.props.pin.link,
-        description: this.props.pin.description,
-        copiedPinId: this.props.pin.id,
-      }
-    }
+    // this.pin = {
+    //   title: this.props.pin.title,
+    //   link: this.props.pin.link,
+    //   description: this.props.pin.description,
+    //   copiedPinId: this.props.pin.id,
+    //   boardId: null
+    // }
 
     const dropdown = this.state.showDropdown ? (
       <BoardDropdown 
         boards={this.props.boards} 
         boardId={this.props.pin.board_id}
-        handleBoard={this.update("board_id")}
+        handleBoard={this.handleBoard("board_id")}
         openModal={this.props.openModal} />
     ) : null;
     const dropdownText = !this.state.dropdownText ? (

@@ -54,7 +54,6 @@ export const createPin = pin => dispatch => {
 )};
 
 export const savePin = pin => dispatch => {
-   
   return (
     PinApiUtil.savePin(pin).then(pin => (
       dispatch(receivePin(pin))
