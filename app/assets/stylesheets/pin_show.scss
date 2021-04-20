@@ -134,3 +134,18 @@
   font-size: 36px;
   padding: 25px 0px 15px 0px;
 }
+
+
+.pin-show-board-section {
+  display: flex;
+  color: #333333;
+
+  a {
+    font-weight: 600;
+    color: #333333;
+  }
+
+  p {
+    padding: 0 4px;
+  }
+}

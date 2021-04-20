@@ -51,10 +51,11 @@ class PinShow extends React.Component {
         description: this.props.pin.description,
         copiedPinId: this.props.pin.id,
         // remove after board 
-        board_id: 1
+        // board_id: 1
       }
     }
 
+    const creator = this.props.pin.creator_id === currentUser.id ? 'You' : this.props.pin.creator;
     // if (this.state.redirectToIndex) {
     //   return (
     //     <Redirect to="/" />
@@ -98,14 +99,21 @@ class PinShow extends React.Component {
                 </div>
                 <div className="pin-show-left-middle">
                   <a className="pin-show-link">
-                    {this.props.pin.link || 'Link goes here'}
+                    {this.props.pin.link}
                   </a>
                   <h4 className="pin-show-title">
                     {this.props.pin.title}
                   </h4>
                   <p className="pin-show-description">
-                    {this.props.pin.description || 'Description goes here'}
+                    {this.props.pin.description}
                   </p>
+                </div>
+                <div className="pin-show-left-bottom">
+                  <div className="pin-show-board-section">
+                    <Link to={`/users/${this.props.pin.creator_id}`} className="creator-link">{creator}</Link>
+                    <p> saved to </p>
+                    <Link to={`/boards/${this.props.pin.board_id}`} className="board-link">{this.props.pin.board_name}</Link>
+                  </div>
                 </div>
               </div>
 
