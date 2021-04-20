@@ -19,8 +19,8 @@
 
 // BoardDropdown
 .board-options-container {
-  width: 166px;
-  height: 40px;
+  // width: 166px;
+  // height: 40px;
   letter-spacing: -0.4px;
   background-color: #efefef;
   border-radius: 8px 0px 0px 8px;
@@ -45,8 +45,9 @@
   }
   
   ul {
-    overflow: scroll;
-    height: 397px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 298px;
     padding-left: 8px;
   }
   

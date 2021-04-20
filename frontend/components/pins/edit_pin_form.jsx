@@ -18,6 +18,18 @@ class EditPinForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
     this.redirectToShow = this.redirectToShow.bind(this);
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.hideDropdown = this.hideDropdown.bind(this);
+  }
+
+  toggleDropdown() {
+    this.setState({showDropdown: !this.state.showDropdown});
+  }
+
+  hideDropdown(e) {
+    if (this.state.showDropdown) {
+      this.setState({showDropdown: !this.state.showDropdown})
+    };
   }
 
   componentDidMount() {
@@ -69,10 +81,19 @@ class EditPinForm extends React.Component {
       )
     }
 
-    // const boardOptions = this.props.boards.map((board) => {
-    //   return <option value={board.id} key={board.id}>{board.board_name}</option>
-    // });
-    
+    const dropdown = this.state.showDropdown ? (
+      <BoardDropdown 
+        boards={this.props.boards} 
+        boardId={this.props.pin.board_id}
+        handleBoard={this.update('board_id')}
+        openModal={this.props.openModal} />
+    ) : null;
+    const dropdownText = !this.state.dropdownText ? (
+      "Select"
+      ) : (
+      this.state.dropdownText
+    );
+
     return (
       <div className="edit-pin-container">
         <div className="edit-pin-form-box-container">
@@ -108,19 +129,14 @@ class EditPinForm extends React.Component {
                 <div className="edit-pin-delete" onClick={this.handleDelete}>Delete</div>
                 <div className="edit-pin-cancel-save">
                   <div className="edit-pin-cancel" onClick={this.redirectToShow}>Cancel</div>
-                  {/* <select 
-                    name="board" 
-                    defaultValue={this.props.pin.board_id} 
-                    className="edit-pin-select-button" 
-                    onChange={this.update('board_id')}>
-                    <option value="select" disabled>Select</option>
-                    {boardOptions}
-                  </select> */}
-                  <BoardDropdown 
-                    boards={this.props.boards} 
-                    boardId={this.props.pin.board_id}
-                    handleBoard={this.update('board_id')}
-                    openModal={this.props.openModal} />
+                  <div 
+                    className="board-dropdown" 
+                    onClick={this.toggleDropdown}
+                    onBlur={this.hideDropdown} 
+                    tabIndex={0}>
+                    <p className="dropdown-select">{dropdownText}</p>
+                    {dropdown}
+                  </div>
                   <input type="submit" value="Save" className="edit-pin-update-button" />
                 </div>
               </div>
