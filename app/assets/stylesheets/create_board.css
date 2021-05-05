@@ -152,3 +152,10 @@ input:checked + .secret-slider:before {
   cursor: initial;
 }
 
+.edit-board-form {
+  text-align: center;
+  background-color: #bbb1b1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
