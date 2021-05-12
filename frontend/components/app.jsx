@@ -29,6 +29,7 @@ const App = () => (
       <ProtectedRoute exact path="/" component={PinIndexContainer} />
       <ProtectedRoute exact path="/pins/:pinId" component={PinShowContainer} />
       <ProtectedRoute exact path="/pins/:pinId/edit" component={EditPinFormContainer} />
+      {/* <ProtectedRoute exact path="/users/:userId" component={} /> */}
       
 
       <Modal />

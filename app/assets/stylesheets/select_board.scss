@@ -1,0 +1,82 @@
+// CreatePinForm
+.board-dropdown {
+  width: 166px;
+  height: 40px;
+  background-color: #efefef;
+  color: rgb(18,18,18);
+  border-radius: 8px 0px 0px 8px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  
+  .dropdown-select {
+    padding: 0 14px;
+    font-size: 18px;
+  }
+}
+
+// BoardDropdown
+.board-options-container {
+  // width: 166px;
+  // height: 40px;
+  letter-spacing: -0.4px;
+  background-color: #efefef;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #8e8e8e;
+  border: none;
+  
+  position: absolute;
+  top: 40px;
+  left: -42px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 374px;
+  width: 324px;
+
+  p:first-child {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  
+  ul {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 298px;
+    padding-left: 8px;
+  }
+  
+  li, div {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .horizontal-line {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  i {
+    padding-right: 22px;
+    color: #9100df;
+    font-size: 30px;
+  }
+}
+
+// .select-dropdown {
+//   letter-spacing: -0.4px;
+//   font-size: 16px;
+//   font-weight: 100;
+//   color: rgb(142, 142, 142);
+//   border: none;
+// }
