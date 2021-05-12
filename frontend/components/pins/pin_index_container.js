@@ -13,7 +13,7 @@ const mapDispatchToProps = dispatch => ({
   updatePin: pin => dispatch(updatePin(pin)),
   deletePin: pinId => dispatch(deletePin(pinId)),
   openModal: () => dispatch(openModal('editPin')),
-  closeMOdal: () => dispatch(closeModal())
+  closeModal: () => dispatch(closeModal())
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PinIndex));
