@@ -20,7 +20,7 @@ export const createPin = (pin) => {
   $.ajax({
     method: 'POST',
     url: '/api/pins',
-    data: pin,
+    data: pin, // not in {} because pin is FormData and FormData is weird
     contentType: false,
     processData: false
   }))
